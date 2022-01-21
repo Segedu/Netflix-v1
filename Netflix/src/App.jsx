@@ -31,7 +31,7 @@ function App() {
           <Route exact path="/Login" component={() => <Login />} />
           <Route exact path="/Register" component={() => <Register />} />
           <Route exact path="/Movies" component={() => <Movies watchList={watchList} setWatchList={setWatchList} />} />
-          <Route exact path="/TvSeries" component={() => <TvSeries />} />
+          <Route exact path="/TvSeries" component={() => <TvSeries watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/UserWatchList" component={() => <UserWatchList />} />
           <Route exact path="/Details" component={() => <Details />} />
         </Switch>

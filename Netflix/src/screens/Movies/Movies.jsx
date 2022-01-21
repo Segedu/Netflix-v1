@@ -6,15 +6,15 @@ import './Movies.module.css';
 
 
 const Movies = ({ watchList, setWatchList }) => {
-    const [data, error, isLoading] = useFetch("/data/moviesDB.json")
+    const [moviesData, error, isLoading] = useFetch("/data/moviesDB.json");
 
-    const moviesElements = data.map(movie =>
+    const moviesElements = moviesData.map(movie =>
         <article key={movie.id}>
             <img src={movie.posterUrl} alt={movie.title} />
             <h2>{movie.title}</h2>
             <p>{movie.year}</p>
             <p>{movie.actors}</p>
-            <button onClick={() => addToList(data, movie.id, watchList, setWatchList, watchList)}>add to watch list</button>
+            <button onClick={() => addToList(moviesData, movie.id, watchList, setWatchList, "watchList")}>add to watch list</button>
         </article>)
 
     return (
