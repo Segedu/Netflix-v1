@@ -1,0 +1,17 @@
+.App {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+section{
+  /* display: flex; */
+}
+
+article{
+  padding: 2%;
+  width: 10%;
+}
+img{
+  width: 100%;
+}
