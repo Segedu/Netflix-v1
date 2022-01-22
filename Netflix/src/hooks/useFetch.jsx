@@ -8,6 +8,9 @@ const useFetch = (url) => {
 
     useEffect(() => {
         getData()
+        return () => {
+            setData()
+        }
     }, [url]);
 
     function getData() {

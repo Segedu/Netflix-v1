@@ -4,22 +4,21 @@ import Spinner from "../../components/Spinner";
 import { addToList } from '../../utils/utils';
 
 
-const TvSeries = ({ watchList, setWatchList }) => {
-    const [tvSeriesData, error, isLoading] = useFetch("/data/tvSeriesDB.json")
+const TvSeries = ({ tvShowsData, tvShowsError, tvShowsIsLoading }) => {
 
-    const tvSeriesElements = tvSeriesData.map(tvSeries =>
+    const tvSeriesElements = tvShowsData.map(tvSeries =>
         <article key={tvSeries.id}>
             <img src={tvSeries.i?.imageUrl} alt={tvSeries.l} />
             <h2>{tvSeries.l}</h2>
             <p>{tvSeries.y}</p>
             <p>{tvSeries.s}</p>
-            <button onClick={() => addToList(tvSeriesData, tvSeries.id, watchList, setWatchList, "watchList")}>add to watch list</button>
+            <button onClick={() => addToList(tvShowsData, tvSeries.id, watchList, setWatchList, "watchList")}>add to watch list</button>
         </article>)
 
     return (
         <div className="TvSeries">
-            {isLoading ? <Spinner /> : tvSeriesElements}
-            {error ? <p style={{ color: "red" }} > error</p> : ""}
+            {tvShowsIsLoading ? <Spinner /> : tvSeriesElements}
+            {tvShowsError ? <p style={{ color: "red" }} > error</p> : ""}
         </div>)
 }
 

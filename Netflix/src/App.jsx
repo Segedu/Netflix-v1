@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
+import useFetch from './hooks/useFetch';
 import Home from './screens/Home/Home';
 import Login from './screens/LogIn/LogIn';
 import Register from './screens/Register/Register';
@@ -9,6 +10,8 @@ import TvSeries from './screens/TvSeries/TvSeries';
 import './App.css'
 
 function App() {
+  const [moviesData, error, isLoading] = useFetch("/data/moviesDB.json");
+  const [tvShowsData, tvShowsError, tvShowsIsLoading] = useFetch("/data/tvSeriesDB.json")
   const [watchList, setWatchList] = useState([]);
 
   return (
@@ -30,8 +33,8 @@ function App() {
           <Route exact path="/" component={() => <Home />} />
           <Route exact path="/Login" component={() => <Login />} />
           <Route exact path="/Register" component={() => <Register />} />
-          <Route exact path="/Movies" component={() => <Movies watchList={watchList} setWatchList={setWatchList} />} />
-          <Route exact path="/TvSeries" component={() => <TvSeries watchList={watchList} setWatchList={setWatchList} />} />
+          <Route exact path="/Movies" component={() => <Movies watchList={watchList} setWatchList={setWatchList} moviesData={moviesData} error={error} isLoading={isLoading} />} />
+          <Route exact path="/TvSeries" component={() => <TvSeries tvShowsData={tvShowsData} tvShowsError={tvShowsError} tvShowsIsLoading={tvShowsIsLoading} />} />
           <Route exact path="/UserWatchList" component={() => <UserWatchList />} />
           <Route exact path="/Details" component={() => <Details />} />
         </Switch>
