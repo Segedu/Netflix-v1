@@ -3,15 +3,22 @@
   color: white;
   text-align: center;
 }
-/* 
-section{
-  /* display: flex; */
-/* } */
-/* 
-article{
-  padding: 2%;
-  width: 10%;
+
+.MainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
-img{ */
-  /* width: 50%; */
-/* } */ 
+article{
+  width: 12%;
+  margin: 1%;
+}
+.imgCont{
+  height: 200px;
+  width: 100%;
+}
+article img{
+  width: 100%;
+  height: 100%;
+}

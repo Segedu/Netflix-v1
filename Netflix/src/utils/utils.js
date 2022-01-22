@@ -30,3 +30,15 @@ export const showObjDetails = (objId, dataArray, setFunction) => {
     //     removeFromList(bookId, readingList, setReadingList);
     //     localStorage.setItem("CompletedList", JSON.stringify(array));
     // }
+
+
+      // function searchData(qurey) {
+    //     const temp_result = books.filter(
+    //         (book) =>
+    //             book.title.toLowerCase().includes(qurey) ||
+    //             book.longDescription.toLowerCase().includes(qurey) ||
+    //             book.authors.toLowerCase().includes(qurey)
+    //     );
+    //     setResult(temp_result);
+    // }
+

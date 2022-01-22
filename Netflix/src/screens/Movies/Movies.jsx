@@ -8,7 +8,9 @@ const Movies = ({ data, error, isLoading, watchList, setWatchList }) => {
 
     const moviesElements = data.filter(movieType => movieType.type == "Movie").map(movie =>
         <article key={movie.id}>
-            <img src={movie.posterUrl} alt={movie.title} />
+            <article className="imgCont">
+                <img src={movie.posterUrl} alt={movie.title} />
+            </article>
             <h2>{movie.title}</h2>
             <p>{movie.year}</p>
             <p>{movie.actors}</p>
@@ -16,10 +18,8 @@ const Movies = ({ data, error, isLoading, watchList, setWatchList }) => {
         </article>)
 
     return (
-        <div className="Movies">
-            <section>
-                {isLoading ? <Spinner /> : moviesElements}
-            </section>
+        <div className="MainContainer">
+            {isLoading ? <Spinner /> : moviesElements}
             {error ? <p style={{ color: "red" }} > error</p> : ""}
         </div>)
 }

@@ -21,15 +21,15 @@ function App() {
           <Link to="/LogIn">Login</Link>
           <Link to="/Register">Register</Link>
           <Link to="/Movies">Movies</Link>
-          <Link to="/TvSeries">Tv shows</Link>
-          <Link to="/UserWatchList">Watch List</Link>
+          <Link to="/TvSeries">Tv Series</Link>
+          <Link to="/UserWatchList">My Watch List</Link>
           <Redirect to="/" />
         </>
         <>
           {/* <Link to="/">Home</Link> */}
         </>
         <Switch>
-          <Route exact path="/" component={() => <Home />} />
+          <Route exact path="/" component={() => <Home data={data} watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Login" component={() => <Login />} />
           <Route exact path="/Register" component={() => <Register />} />
           <Route exact path="/Movies" component={() => <Movies watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
