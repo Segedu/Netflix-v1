@@ -31,16 +31,7 @@ export function searchData(input, dataArray, setArray, setInput) {
             return (element.title.match(regex))
 
         })
-        console.log({ search_result });
         setArray(search_result)
         setInput(input)
     }
 }
-
-    // export const moveToCompleted = (bookId, completedList, readingList, setCompletedList, setReadingList) => {
-    //     const foundBook = readingList.find(book => book.id == bookId);
-    //     const array = [foundBook, ...completedList];
-    //     setCompletedList(array);
-    //     removeFromList(bookId, readingList, setReadingList);
-    //     localStorage.setItem("CompletedList", JSON.stringify(array));
-    // }
