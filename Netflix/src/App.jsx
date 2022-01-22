@@ -11,7 +11,7 @@ import './App.css'
 
 function App() {
   const [moviesData, error, isLoading] = useFetch("/data/moviesDB.json");
-  const [tvShowsData, tvShowsError, tvShowsIsLoading] = useFetch("/data/tvSeriesDB.json")
+  const [tvShowsData, tvShowsError, tvShowsIsLoading] = useFetch("/data/tvSeriesDB.json");
   const [watchList, setWatchList] = useState([]);
 
   return (
@@ -34,7 +34,7 @@ function App() {
           <Route exact path="/Login" component={() => <Login />} />
           <Route exact path="/Register" component={() => <Register />} />
           <Route exact path="/Movies" component={() => <Movies watchList={watchList} setWatchList={setWatchList} moviesData={moviesData} error={error} isLoading={isLoading} />} />
-          <Route exact path="/TvSeries" component={() => <TvSeries tvShowsData={tvShowsData} tvShowsError={tvShowsError} tvShowsIsLoading={tvShowsIsLoading} />} />
+          <Route exact path="/TvSeries" component={() => <TvSeries watchList={watchList} setWatchList={setWatchList} tvShowsData={tvShowsData} tvShowsError={tvShowsError} tvShowsIsLoading={tvShowsIsLoading} />} />
           <Route exact path="/UserWatchList" component={() => <UserWatchList />} />
           <Route exact path="/Details" component={() => <Details />} />
         </Switch>

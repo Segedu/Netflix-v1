@@ -4,7 +4,7 @@ import Spinner from "../../components/Spinner";
 import { addToList } from '../../utils/utils';
 
 
-const TvSeries = ({ tvShowsData, tvShowsError, tvShowsIsLoading }) => {
+const TvSeries = ({ tvShowsData, tvShowsError, tvShowsIsLoading, watchList, setWatchList }) => {
 
     const tvSeriesElements = tvShowsData.map(tvSeries =>
         <article key={tvSeries.id}>
