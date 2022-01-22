@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import { addToList, removeFromList } from '../../utils/utils';
+import { addToList, removeFromList, searchData } from '../../utils/utils';
 
 const Home = ({ data, watchList, setWatchList }) => {
-    const [state, setState] = useState("");
+    const [searchResultArray, setSearchResultArray] = useState("");
+    const [searchString, setSearchString] = useState("");
+
 
     const Elements = data.map(display =>
         <article key={display.id}>
@@ -21,7 +23,7 @@ const Home = ({ data, watchList, setWatchList }) => {
 
     return (
         <div className="MainContainer">
-            <input className="searchInput" type="search" inputMode="search" placeholder="Type movie/Tv series..." />
+            <input onChange={(e) => searchData(setSearchString(e.target.value.toLowerCase()), data, setSearchResultArray)} className="searchInput" type="search" inputMode="search" placeholder="Type movie/Tv series..." />
             <div className="HomePageTrailer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, atque.
                 Placeat sed voluptatum qui asperiores tenetur fugiat deserunt cumque totam!
                 Ipsum quasi expedita perspiciatis ullam porro quae atque. Laborum, ab?
@@ -33,6 +35,7 @@ const Home = ({ data, watchList, setWatchList }) => {
                 Aut numquam officiis ipsam nam excepturi dignissimos molestias architecto fugiat.
                 Officiis amet laborum beatae vitae, ut neque sint veniam sunt.</div>
             {Elements}
+            {searchResultArray ? searchResultArray : ""}
         </div>)
 }
 

@@ -23,6 +23,17 @@ export const showObjDetails = (objId, dataArray, setFunction) => {
     setFunction(foundObj);
     setIsRedirect(true);
 }
+
+export function searchData(input, dataArray, setFunction) {
+    const search_result = dataArray.filter(element =>
+        element.title.toLowerCase().includes(input) &&
+        // element.plot?.plot.toLowerCase().includes(input) ||
+        element.actors.toLowerCase().includes(input)
+    )
+    setFunction(search_result);
+    console.log({ search_result });
+}
+
     // export const moveToCompleted = (bookId, completedList, readingList, setCompletedList, setReadingList) => {
     //     const foundBook = readingList.find(book => book.id == bookId);
     //     const array = [foundBook, ...completedList];
@@ -30,15 +41,3 @@ export const showObjDetails = (objId, dataArray, setFunction) => {
     //     removeFromList(bookId, readingList, setReadingList);
     //     localStorage.setItem("CompletedList", JSON.stringify(array));
     // }
-
-
-      // function searchData(qurey) {
-    //     const temp_result = books.filter(
-    //         (book) =>
-    //             book.title.toLowerCase().includes(qurey) ||
-    //             book.longDescription.toLowerCase().includes(qurey) ||
-    //             book.authors.toLowerCase().includes(qurey)
-    //     );
-    //     setResult(temp_result);
-    // }
-
