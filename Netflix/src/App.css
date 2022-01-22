@@ -3,12 +3,21 @@
   color: white;
   text-align: center;
 }
-
 .MainContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+}
+.HomePageTrailer{
+  background-color: red;
+  width: 96%;
+  height: 70vh;
+}
+.searchInput{
+  width: 96%;
+  padding: 1%;
+  margin: 1%;
 }
 article{
   width: 12%;
