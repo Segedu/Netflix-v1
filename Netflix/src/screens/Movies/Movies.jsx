@@ -1,12 +1,13 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import useFetch from '../../hooks/useFetch';
 import Spinner from "../../components/Spinner";
-import { addToList } from '../../hooks/Utils';
+import { addToList } from '../../utils/utils';
 import './Movies.module.css';
 
 
 const Movies = ({ watchList, setWatchList }) => {
     const [moviesData, error, isLoading] = useFetch("/data/moviesDB.json");
+    const [watchListUpdate, setWatchListUpdate] = useState([]);
 
     const moviesElements = moviesData.map(movie =>
         <article key={movie.id}>
@@ -14,7 +15,7 @@ const Movies = ({ watchList, setWatchList }) => {
             <h2>{movie.title}</h2>
             <p>{movie.year}</p>
             <p>{movie.actors}</p>
-            <button onClick={() => addToList(moviesData, movie.id, watchList, setWatchList, "watchList")}>add to watch list</button>
+            <button onClick={() => addToList(moviesData, movie.id, watchListUpdate, setWatchListUpdate, "watchList")}>add to watch list</button>
         </article>)
 
     return (

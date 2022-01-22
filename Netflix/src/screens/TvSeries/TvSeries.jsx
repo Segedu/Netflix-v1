@@ -1,7 +1,7 @@
 // import { useState, useEffect } from "react";
 import useFetch from '../../hooks/useFetch';
 import Spinner from "../../components/Spinner";
-import { addToList } from '../../hooks/Utils';
+import { addToList } from '../../utils/utils';
 
 
 const TvSeries = ({ watchList, setWatchList }) => {

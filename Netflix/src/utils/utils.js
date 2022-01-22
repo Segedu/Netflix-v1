@@ -1,16 +1,13 @@
-export const addToList = (dataArray, objId, category, setFunction, listKeyName) => {
+export function addToList(dataArray, objId, category, setFunction, listKeyName) {
     const filtered = dataArray.filter(obj => obj.id == objId);
-    const foundObj = category.find(obj => obj.id == objId)
-    if (foundObj === undefined) { return }
-
-    console.log({ filtered });
-    if (filtered.indexOf(foundObj) > -1) {
-        alert(`already in the ${listKeyName}`)
+    const foundObj = filtered.find(obj => obj.id == objId);
+    if (category.indexOf(foundObj) > -1) {
+        alert(`already in your ${listKeyName}`)
     }
     else {
         const updatedArray = [foundObj, ...category];
         setFunction(updatedArray);
-        //     // localStorage.setItem(listKeyName, JSON.stringify(updatedArray));
+        localStorage.setItem(listKeyName, JSON.stringify(updatedArray));
     }
 }
 
