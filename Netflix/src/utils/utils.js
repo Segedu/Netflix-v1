@@ -24,14 +24,17 @@ export const showObjDetails = (objId, dataArray, setFunction) => {
     setIsRedirect(true);
 }
 
-export function searchData(input, dataArray, setFunction) {
-    const search_result = dataArray.filter(element =>
-        element.title.toLowerCase().includes(input) &&
-        // element.plot?.plot.toLowerCase().includes(input) ||
-        element.actors.toLowerCase().includes(input)
-    )
-    setFunction(search_result);
-    console.log({ search_result });
+export function searchData(input, dataArray, setArray, setInput) {
+    if (input) {
+        const search_result = dataArray.filter(element => {
+            const regex = new RegExp(`${input}`, "gi");
+            return (element.title.match(regex))
+
+        })
+        console.log({ search_result });
+        setArray(search_result)
+        setInput(input)
+    }
 }
 
     // export const moveToCompleted = (bookId, completedList, readingList, setCompletedList, setReadingList) => {
