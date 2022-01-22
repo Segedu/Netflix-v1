@@ -4,10 +4,10 @@ import useFetch from './hooks/useFetch';
 import Home from './screens/Home/Home';
 import Login from './screens/LogIn/LogIn';
 import Register from './screens/Register/Register';
-import UserWatchList from './screens/UserWatchList/UserWatchList'
+import UserWatchList from './screens/UserWatchList/UserWatchList';
 import Movies from './screens/Movies/Movies';
 import TvSeries from './screens/TvSeries/TvSeries';
-import './App.css'
+import './App.css';
 
 function App() {
   const [moviesData, error, isLoading] = useFetch("/data/moviesDB.json");
