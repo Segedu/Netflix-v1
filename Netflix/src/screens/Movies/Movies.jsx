@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import useFetch from '../../hooks/useFetch';
 import Spinner from "../../components/Spinner";
-import { addToList } from '../../utils/utils';
-import './Movies.module.css';
+import { addToList, removeFromList } from '../../utils/utils';
+// import './Movies.module.css';
 
 const Movies = ({ data, error, isLoading, watchList, setWatchList }) => {
 
@@ -15,6 +15,7 @@ const Movies = ({ data, error, isLoading, watchList, setWatchList }) => {
             <p>{movie.year}</p>
             <p>{movie.actors}</p>
             <button onClick={() => addToList(data, movie.id, watchList, setWatchList, "watchList")}>add to watch list</button>
+            <button onClick={() => removeFromList(movie.id, watchList, setWatchList, "watchList")}>remove from watch list</button>
         </article>)
 
     return (

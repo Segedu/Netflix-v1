@@ -1,6 +1,6 @@
 import useFetch from '../../hooks/useFetch';
 import Spinner from "../../components/Spinner";
-import { addToList } from '../../utils/utils';
+import { addToList, removeFromList } from '../../utils/utils';
 
 const TvSeries = ({ data, error, isLoading, watchList, setWatchList }) => {
 
@@ -16,6 +16,8 @@ const TvSeries = ({ data, error, isLoading, watchList, setWatchList }) => {
             <p>{tvSeries.year}</p>
             <p>{tvSeries.actors}</p>
             <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}>add to watch list</button>
+            <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}>remove from watch list</button>
+
         </article>)
     return (
         <div className="MainContainer">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { addToList, removeFromList } from '../../utils/utils';
 
 const Home = ({ data, watchList, setWatchList }) => {
     const [state, setState] = useState("");
@@ -16,6 +17,8 @@ const Home = ({ data, watchList, setWatchList }) => {
             <p>{display.year}</p>
             <p>{display.actors}</p>
             <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}>add to watch list</button>
+            <button onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}>remove from watch list</button>
+
         </article>)
     return (
         <div className="MainContainer">
