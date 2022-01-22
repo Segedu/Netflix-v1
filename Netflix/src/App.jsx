@@ -10,7 +10,7 @@ import TvSeries from './screens/TvSeries/TvSeries';
 import './App.css';
 
 function App() {
-  const [data, error, isLoading] = useFetch("/data/total.json");
+  const [data, error, isLoading] = useFetch("/data/data.json");
   const [watchList, setWatchList] = useState([]);
 
   return (
