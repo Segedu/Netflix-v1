@@ -4,7 +4,6 @@ import Spinner from "../../components/Spinner";
 import { addToList } from '../../utils/utils';
 import './Movies.module.css';
 
-
 const Movies = ({ moviesData, isLoading, error, watchList, setWatchList }) => {
 
     const moviesElements = moviesData.map(movie =>

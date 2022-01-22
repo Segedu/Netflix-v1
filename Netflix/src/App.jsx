@@ -35,7 +35,7 @@ function App() {
           <Route exact path="/Register" component={() => <Register />} />
           <Route exact path="/Movies" component={() => <Movies watchList={watchList} setWatchList={setWatchList} moviesData={moviesData} error={error} isLoading={isLoading} />} />
           <Route exact path="/TvSeries" component={() => <TvSeries watchList={watchList} setWatchList={setWatchList} tvShowsData={tvShowsData} tvShowsError={tvShowsError} tvShowsIsLoading={tvShowsIsLoading} />} />
-          <Route exact path="/UserWatchList" component={() => <UserWatchList />} />
+          <Route exact path="/UserWatchList" component={() => <UserWatchList watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Details" component={() => <Details />} />
         </Switch>
       </div>
