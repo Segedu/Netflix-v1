@@ -9,10 +9,10 @@ const TvSeries = ({ data, error, isLoading, watchList, setWatchList }) => {
             {/* <video width="750" height="500" autoPlay loop muted >
             <source src={tvSeries.imageUrl} type="video/mp4" />
         </video> */}
-            <article className="imgCont">
+            <article className="displayCont">
                 <img src={tvSeries.posterUrl} alt={tvSeries.title} />
+                <h2>{tvSeries.title}</h2>
             </article>
-            <h2>{tvSeries.title}</h2>
             <p>{tvSeries.year}</p>
             <p>{tvSeries.actors}</p>
             <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}>add to watch list</button>

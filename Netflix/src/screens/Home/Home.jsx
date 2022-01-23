@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { addToList, removeFromList, searchData } from '../../utils/utils';
+import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
+import { BsHandThumbsUp } from "react-icons/bs";
 
 const Home = ({ data, watchList, setWatchList }) => {
     const [suggestions, setSuggestions] = useState("");
@@ -7,19 +9,22 @@ const Home = ({ data, watchList, setWatchList }) => {
 
 
     const Elements = data.map(display =>
-        <article key={display.id}>
+        <section key={display.id}>
             {/* <video width="750" height="500" autoPlay loop muted >
             <source src={display.imageUrl} type="video/mp4" />
         </video> */}
-            <article className="imgCont">
+            <article className="displayCont">
+                <h2>{display.title}</h2>
+                <p>{display.actors}</p>
+                <h3>{display.year}</h3>
                 <img src={display.posterUrl} alt={display.title} />
+                <article className="buttonsCont">
+                    <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
+                    <button><BsHandThumbsUp fontSize="xx-large" color="white" /></button>
+                </article>
             </article>
-            <h2>{display.title}</h2>
-            <p>{display.year}</p>
-            <p>{display.actors}</p>
-            <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}>add to watch list</button>
-            <button onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}>remove from watch list</button>
-        </article>)
+        </section>)
 
     const suggestionHandler = (searchTerm) => {
         setSearchTerm(searchTerm);
