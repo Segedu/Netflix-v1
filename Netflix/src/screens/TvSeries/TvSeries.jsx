@@ -1,24 +1,25 @@
 import useFetch from '../../hooks/useFetch';
 import Spinner from "../../components/Spinner";
 import { addToList, removeFromList } from '../../utils/utils';
+import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
+import { BsHandThumbsUp } from "react-icons/bs";
 
 const TvSeries = ({ data, error, isLoading, watchList, setWatchList }) => {
 
     const tvSeriesElements = data.filter(TvSeriesType => TvSeriesType.type == "TvShow").map(tvSeries =>
-        <article key={tvSeries.id}>
-            {/* <video width="750" height="500" autoPlay loop muted >
-            <source src={tvSeries.imageUrl} type="video/mp4" />
-        </video> */}
+        <section key={tvSeries.id}>
             <article className="displayCont">
-                <img src={tvSeries.posterUrl} alt={tvSeries.title} />
                 <h2>{tvSeries.title}</h2>
+                <p>{tvSeries.actors}</p>
+                <p>{tvSeries.year}</p>
+                <img src={tvSeries.posterUrl} alt={tvSeries.title} />
+                <article className="buttonsCont">
+                    <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
+                    <button><BsHandThumbsUp fontSize="xx-large" color="white" /></button>
+                </article>
             </article>
-            <p>{tvSeries.year}</p>
-            <p>{tvSeries.actors}</p>
-            <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}>add to watch list</button>
-            <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}>remove from watch list</button>
-
-        </article>)
+        </section>)
     return (
         <div className="MainContainer">
             {isLoading ? <Spinner /> : tvSeriesElements}

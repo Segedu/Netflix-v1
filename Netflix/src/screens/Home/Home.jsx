@@ -3,6 +3,7 @@ import { addToList, removeFromList, searchData } from '../../utils/utils';
 import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp } from "react-icons/bs";
 import mainTrailer from '../../video/homepagetrailer.mp4';
+
 const Home = ({ data, watchList, setWatchList }) => {
     const [suggestions, setSuggestions] = useState("");
     const [searchTerm, setSearchTerm] = useState("");
