@@ -2,6 +2,7 @@
     {
         "type": "TvShow",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDlkMWIzMWYtMjQ1NS00MzNhLWJkMDYtNDJjZjZmMmI1M2I0XkEyXkFqcGdeQXVyNzMwOTY2NTI@._V1_.jpg",
+        "trailer": "https://youtu.be/1_empDUiWR4",
         "i": {
             "height": 1000,
             "width": 680
@@ -462,12 +463,14 @@
         "year": 1988
     },
     {
+        "type": "Movie",
         "id": "tt10323676",
         "title": "Violence of Action",
         "q": "feature",
         "rank": 11340,
         "actors": "Chris Pine, Gillian Jacobs",
-        "year": 2022
+        "year": 2022,
+        "posterUrl": "https://www.themoviedb.org/t/p/w500/jWdz6qEu4ShWjQbzlOaIMUVIFsH.jpg"
     },
     {
         "type": "TvShow",

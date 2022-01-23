@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { addToList, removeFromList, searchData } from '../../utils/utils';
 import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp } from "react-icons/bs";
-
+import mainTrailer from '../../video/homepagetrailer.mp4';
 const Home = ({ data, watchList, setWatchList }) => {
     const [suggestions, setSuggestions] = useState("");
     const [searchTerm, setSearchTerm] = useState("");
@@ -10,9 +10,9 @@ const Home = ({ data, watchList, setWatchList }) => {
 
     const Elements = data.map(display =>
         <section key={display.id}>
-            {/* <video width="750" height="500" autoPlay loop muted >
-            <source src={display.imageUrl} type="video/mp4" />
-        </video> */}
+            {/* <video width="500" height="500" controls> */}
+            {/* <source src={display.trailer} type="video/mp4" /> */}
+            {/* </video> */}
             <article className="displayCont">
                 <h2>{display.title}</h2>
                 <p>{display.actors}</p>
@@ -30,19 +30,25 @@ const Home = ({ data, watchList, setWatchList }) => {
         setSearchTerm(searchTerm);
         setSuggestions([]);
     }
-
+    const searchInputHandler = (searchTerm) => {
+        searchData(searchTerm, data, setSuggestions, setSearchTerm)
+    }
     return (
         <div className="MainContainer">
-            <input onChange={(e) => searchData(e.target.value, data, setSuggestions, setSearchTerm)} className="searchInput" type="search" inputMode="search" placeholder="Type movie/Tv series..." />
+            <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className="searchInput" type="text" inputMode="search" placeholder="Type movie/Tv series..." />
             <div>
-                {searchTerm ? suggestions.map((suggestion, i) => <article key={i}><p onClick={() => suggestionHandler(suggestion.title)}>{suggestion.title}</p></article>) : ""}
+                {suggestions && suggestions.map((suggestion, i) =>
+                    <section key={i} className="searchResultCont" onClick={() => suggestionHandler(suggestion.title)}><article>
+                        <h4>{suggestion.title}</h4><h4>{suggestion.year}</h4><img src={suggestion.posterUrl} />
+                    </article></section>)}
             </div>
-            <div className="HomePageTrailer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, atque.
-                Placeat sed voluptatum qui asperiores tenetur fugiat deserunt cumque totam!
-                Ipsum quasi expedita perspiciatis ullam porro quae atque. Laborum, ab?
-                Facere iure eum ad architecto aliquam in hic dolores eos.
-                Vitae accusantium dolorem quibusdam? Dolores dolorum nobis impedit est ratione!
-                Accusantium, optio repudiandae soluta iste vero aspernatur error deserunt in.
+            <div className="HomePageTrailer">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                ><source src={mainTrailer} type="video/mp4" />
+                </video>
             </div>
             {Elements}
         </div>)
