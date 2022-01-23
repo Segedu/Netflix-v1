@@ -4,4 +4,6 @@ dist
 dist-ssr
 *.local
 
-*public
+.data.json
+.axios.jsx
+.test.js
