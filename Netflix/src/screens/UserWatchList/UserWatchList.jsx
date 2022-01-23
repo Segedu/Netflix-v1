@@ -3,7 +3,6 @@ import { removeFromList } from "../../utils/utils";
 import { HiOutlineMinusCircle } from "react-icons/hi";
 
 const UserWatchList = ({ watchList, setWatchList }) => {
-    // const [state, setState] = useState("");
 
     const watchListElements = watchList.map(watchListObj =>
         <section key={watchListObj.id}>
@@ -13,7 +12,7 @@ const UserWatchList = ({ watchList, setWatchList }) => {
                 <p>{watchListObj.year}</p>
                 <p>{watchListObj.actors}</p>
                 <article className="buttonsCont">
-                    <button onClick={() => removeFromList(watchListObj.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle /></button>
+                    <button onClick={() => removeFromList(watchListObj.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
         </section>)

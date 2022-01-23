@@ -32,8 +32,9 @@ const Home = ({ data, watchList, setWatchList }) => {
         setSuggestions([]);
     }
     const searchInputHandler = (searchTerm) => {
-        searchData(searchTerm, data, setSuggestions, setSearchTerm)
+        searchData(searchTerm, data, setSuggestions, setSearchTerm);
     }
+
     return (
         <div className="MainContainer">
             <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className="searchInput" type="text" inputMode="search" placeholder="Type movie/Tv series..." />
@@ -44,12 +45,12 @@ const Home = ({ data, watchList, setWatchList }) => {
                     </article></section>)}
             </div>
             <div className="HomePageTrailer">
-                <video
+                {/* <video
                     autoPlay
                     loop
                     muted
                 ><source src={mainTrailer} type="video/mp4" />
-                </video>
+                </video> */}
             </div>
             {Elements}
         </div>)

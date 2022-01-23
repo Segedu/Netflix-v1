@@ -3,6 +3,7 @@
   color: white;
   text-align: center;
 }
+
 .MainContainer{
   display: flex;
   flex-wrap: wrap;
@@ -19,48 +20,45 @@
   margin: 1%;
 }
 section{
-  width: 20%;
-  margin: 2%;
+  position: relative;
+  width: 17rem;
+  margin: 0.8rem;
+  white-space: normal;
 }
 .displayCont{
-  box-shadow: 0px 0px 4px 2px gray;
-  position: relative;
-  height: 250px;
+  height: 18rem;
   width: 100%;
- 
 }
 p{
   position: absolute;
   font-weight: bold;
-  top: 190px;
-  left: 50px;
-  z-index: 1;
-  padding: 1%;
-  
+  top: 11rem;
+  left: 1rem;
+  z-index: 1;  
 }
  h2{
   position: absolute;
-  margin-left: 10%;
+  margin-left: 4rem;
   z-index: 1;
 
 }
 h3{
   position: absolute;
-  margin-left: 10%;
-  z-index: 1;
-  top: 5rem;  
+    margin-left: 7rem;
+    z-index: 1;
+    top: 5rem; 
 }
 .buttonsCont{
   position: absolute;
   display: flex;
-  margin: 1%;
+  margin-left: 4rem;
+  margin-top: -3rem;
 }
 .buttonsCont button{
+  background-color: transparent;
   border: none;
   margin-top: 0.4rem;
-  background-color: black;
 }
-
 img{
   position: relative;
   border-radius: 0.5rem;
