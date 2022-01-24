@@ -3,7 +3,13 @@
     height: 70vh;
   }
 .searchInput{
-    width: 96%;
-    padding: 1%;
-    margin: 1%;
+  width: 65rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.searchBtn{
+  padding: 0.5rem;
+    font-size: larger;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
 }

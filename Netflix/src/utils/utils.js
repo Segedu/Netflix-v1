@@ -18,7 +18,7 @@ export const removeFromList = (objId, category, setFunction, listKeyName) => {
     return updatedArrayAfterRemove
 }
 
-export const showObjDetails = (objId, dataArray, setFunction) => {
+export const showObjDetails = (objId, dataArray, setFunction, setIsRedirect) => {
     const foundObj = dataArray.find(obj => obj.id === objId);
     setFunction(foundObj);
     setIsRedirect(true);
@@ -29,7 +29,6 @@ export function searchData(input, dataArray, setArray, setInput) {
         const search_result = dataArray.filter(element => {
             const regex = new RegExp(`${input}`, "gi");
             return (element.title.match(regex))
-
         })
         setArray(search_result)
         setInput(input)

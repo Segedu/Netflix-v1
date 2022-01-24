@@ -1,9 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
-import { API_KEY } from '../../../logic/key';
+import { API_KEY } from '../../../logic/key.js';
 import style from '../LogIn/LogIn.module.css';
 
-const Register = ({ setAuth, showRegisterDialog, setShowRegisterDialog }) => {
+const Register = ({ setAuth }) => {
     const [userEmail, setUserEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState()
@@ -21,8 +21,7 @@ const Register = ({ setAuth, showRegisterDialog, setShowRegisterDialog }) => {
                 setAuth(response.data);
             })
             .catch(function (error) {
-                console.log(error)
-                setErrorFromServer(error)
+                setErrorFromServer(error.message)
             });
     }
 
@@ -39,13 +38,13 @@ const Register = ({ setAuth, showRegisterDialog, setShowRegisterDialog }) => {
 
     return (
         <div className="Form">
-            <dialog open={showRegisterDialog ? 'open' : 'close'}>
-                <button className={style.closeDialog} onClick={() => { setShowRegisterDialog(false) }}>X</button><h1>Register Here</h1>
+            <dialog open>
+                <button className={style.closeDialog} >X</button>
+                <h1>Register Here</h1>
                 <form onSubmit={(e) => {
                     e.preventDefault();
                     if (password === confirmPassword) {
                         register()
-                        setShowRegisterDialog(false)
                     } else {
                         alert("incorrect password")
                     }

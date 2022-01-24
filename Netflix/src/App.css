@@ -3,12 +3,20 @@
   color: white;
   text-align: center;
 }
+.App a{
+  text-decoration: none;
+    font-size: larger;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+}
 
 .MainContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  margin: 1rem;
 }
 
 section{
@@ -62,4 +70,14 @@ img{
 video{
   align-items: center;
   width: 100%;
+}
+.LogOutBtn{
+  background-color: rgb(180, 0, 0);
+  padding: 1rem;
+  font-size: larger;
+  color: white;
+  border-radius: 0.5rem;
+  
+    display: inline;
+    float: left;
 }
