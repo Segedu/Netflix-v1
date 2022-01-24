@@ -18,9 +18,11 @@ const Movies = ({ data, error, isLoading, watchList, setWatchList, setMovieDetai
                 <p>{movie.actors}</p>
                 <p>{movie.year}</p>
                 <article className="buttonsCont">
-                    <button onClick={() => addToList(data, movie.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
-                    <button onClick={() => removeFromList(movie.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
-                    <button><BsHandThumbsUp fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => addToList(data, movie.id, watchList, setWatchList, "watchList")}>
+                        <HiOutlinePlusCircle title="Add to watch list" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => removeFromList(movie.id, watchList, setWatchList, "watchList")}>
+                        <HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+                    <button><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
         </section >)

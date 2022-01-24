@@ -19,10 +19,10 @@ const TvSeries = ({ data, error, isLoading, watchList, setWatchList, setMovieDet
                 <p>{tvSeries.year}</p>
                 <article className="buttonsCont">
                     <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}>
-                        <HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
+                        <HiOutlinePlusCircle  title="Add to watch list" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}>
-                        <HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
-                    <button><BsHandThumbsUp fontSize="xx-large" color="white" /></button>
+                        <HiOutlineMinusCircle  title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+                    <button><BsHandThumbsUp  title="Like" fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
         </section>)
