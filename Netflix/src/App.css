@@ -2,6 +2,7 @@
   background-color: black;
   color: white;
   text-align: center;
+  height: 100%;
 }
 .App a{
   text-decoration: none;
@@ -31,9 +32,7 @@ section{
     height: 100%;
     display: none;
 }
-/* .displayCont:hover{
-  display: block;
-} */
+
 h2{
   position: absolute;
   margin-left: 4rem;
@@ -53,7 +52,6 @@ p{
   z-index: 1;  
 }
 .buttonsCont{
-  /* display: none; */
   position: absolute;
   display: flex;
   margin-left: 4rem;

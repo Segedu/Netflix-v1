@@ -1,4 +1,4 @@
-import Spinner from "../../components/Spinner";
+import Spinner from "../../components/Spinner/Spinner";
 import { useState } from "react";
 import { addToList, removeFromList, showObjDetails } from '../../utils/utils';
 import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";

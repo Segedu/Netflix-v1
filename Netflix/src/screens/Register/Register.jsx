@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { API_KEY } from '../../../logic/key.js';
+import Spinner from "../../components/Spinner/Spinner.jsx";
 import style from '../LogIn/LogIn.module.css';
 
 const Register = ({ setAuth }) => {
@@ -8,16 +9,18 @@ const Register = ({ setAuth }) => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState()
     const [errorFromServer, setErrorFromServer] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     function register() {
+        setLoading(true)
         const url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`
-
         axios
             .post(url, {
                 email: userEmail,
                 password: password,
             })
             .then(function (response) {
+                setLoading(false)
                 setAuth(response.data);
             })
             .catch(function (error) {
@@ -38,23 +41,21 @@ const Register = ({ setAuth }) => {
 
     return (
         <div className="Form">
-            <dialog open>
-                <button className={style.closeDialog} >X</button>
+            <section>{loading ? <Spinner /> : ""}</section>
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                if (password === confirmPassword) {
+                    register()
+                } else {
+                    alert("incorrect password")
+                }
+            }}>
                 <h1>Register Here</h1>
-                <form onSubmit={(e) => {
-                    e.preventDefault();
-                    if (password === confirmPassword) {
-                        register()
-                    } else {
-                        alert("incorrect password")
-                    }
-                }}>
-                    <input type="email" onChange={(e) => { emailValidation(e) }} placeholder="Enter Email" /><br></br>
-                    <input type="password" onChange={(e) => { passwordValidation(e, setPassword) }} placeholder="Enter Password" /><br></br>
-                    <input type="password" onChange={(e) => { passwordValidation(e, setConfirmPassword) }} placeholder="Confirm Password" /><br></br>
-                    <input type="submit" value="Register" />
-                </form>
-            </dialog>
+                <input type="email" onChange={(e) => { emailValidation(e) }} placeholder="Enter Email" /><br></br>
+                <input type="password" onChange={(e) => { passwordValidation(e, setPassword) }} placeholder="Enter Password" /><br></br>
+                <input type="password" onChange={(e) => { passwordValidation(e, setConfirmPassword) }} placeholder="Confirm Password" />
+                <input type="submit" value="Register" />
+            </form>
             <h3>{errorFromServer ? "Error from server during Registration" : ""}</h3>
         </div>
     )

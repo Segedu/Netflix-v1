@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { API_KEY } from '../../../logic/key';
-import Spinner from '../../components/Spinner'
+import Spinner from '../../components/Spinner/Spinner'
 import styles from './LogIn.module.css';
 
 const LogIn = ({ setAuth }) => {
@@ -32,20 +32,17 @@ const LogIn = ({ setAuth }) => {
 
     return (
         <div className="Form">
-            <dialog open>
-                <button className={styles.closeDialog}>X</button>
-                <h1>LogIn</h1>
-                <form onSubmit={(e) => {
-                    e.preventDefault(),
-                        login()
-                }}>
-                    <input className={styles.input} type="email" placeholder="Enter Your Email" onChange={(e) => { setEmail(e.target.value) }} /><br></br>
-                    <input className={styles.input} type="password" placeholder="Enter Your Password" onChange={(e) => { setPassword(e.target.value) }} /><br></br>
-                    <input className={styles.button} type="submit" value="Log-In" />
-                </form>
-            </dialog>
-            <h3>{errorFromServer ? "Error from server during Login" : ""}</h3>
             <section>{loading ? <Spinner /> : ""}</section>
+            <form onSubmit={(e) => {
+                e.preventDefault(),
+                    login()
+            }} >
+                <h1>LogIn</h1>
+                <input className={styles.input} type="email" placeholder="Enter Your Email" onChange={(e) => { setEmail(e.target.value) }} /><br></br>
+                <input className={styles.input} type="password" placeholder="Enter Your Password" onChange={(e) => { setPassword(e.target.value) }} /><br></br>
+                <input className={styles.button} type="submit" value="Log-In" />
+            </form>
+            <h3>{errorFromServer ? "Error from server during Login" : ""}</h3>
         </div >)
 }
 
