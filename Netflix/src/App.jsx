@@ -43,8 +43,8 @@ function App() {
           <Route exact path="/" component={() => <Home setMovieDetails={setMovieDetails} data={data} watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Login" component={() => <Login setAuth={setAuth} />} />
           <Route exact path="/Register" component={() => <Register setAuth={setAuth} />} />
-          <Route exact path="/Movies" component={() => <Movies watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
-          <Route exact path="/TvSeries" component={() => <TvSeries watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
+          <Route exact path="/Movies" component={() => <Movies setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
+          <Route exact path="/TvSeries" component={() => <TvSeries setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
           <Route exact path="/UserWatchList" component={() => <UserWatchList watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Details" component={() => <Details movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
         </Switch>

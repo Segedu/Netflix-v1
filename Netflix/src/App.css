@@ -21,13 +21,29 @@
 
 section{
   position: relative;
-  width: 17rem;
+  width: 10rem;
   margin: 0.8rem;
   white-space: normal;
 }
+
 .displayCont{
-  height: 18rem;
-  width: 100%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+/* .displayCont:hover{
+  display: block;
+} */
+h2{
+  position: absolute;
+  margin-left: 4rem;
+  z-index: 1;
+}
+h3{
+  position: absolute;
+  margin-left: 7rem;
+  z-index: 1;
+  top: 5rem; 
 }
 p{
   position: absolute;
@@ -36,19 +52,8 @@ p{
   left: 1rem;
   z-index: 1;  
 }
- h2{
-  position: absolute;
-  margin-left: 4rem;
-  z-index: 1;
-
-}
-h3{
-  position: absolute;
-    margin-left: 7rem;
-    z-index: 1;
-    top: 5rem; 
-}
 .buttonsCont{
+  /* display: none; */
   position: absolute;
   display: flex;
   margin-left: 4rem;
