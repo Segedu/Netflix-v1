@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { API_KEY } from '../../../logic/key';
-import './Login.module.css';
+import styles from './LogIn.module.css';
 
 const LogIn = ({ setAuth, showDialog, setShowDialog }) => {
     const [email, setEmail] = useState("");
@@ -34,16 +34,16 @@ const LogIn = ({ setAuth, showDialog, setShowDialog }) => {
     return (
         <div className="Form">
             <dialog open={showDialog ? 'open' : 'close'}>
-                <button onClick={() => { setShowDialog(false) }}>X</button>
-                <h2>Login</h2>
+                <button className={styles.closeDialog} onClick={() => { setShowDialog(false) }}>X</button>
+                <h1>LogIn</h1>
                 <form onSubmit={(e) => {
                     e.preventDefault(),
                         login()
                     setShowDialog(false)
                 }}>
-                    <input type="email" placeholder="Enter Your Email" onChange={(e) => { setEmail(e.target.value) }} /><br></br>
-                    <input type="password" placeholder="Enter Your Password" onChange={(e) => { setPassword(e.target.value) }} /><br></br>
-                    <input type="submit" value="Log-In" />
+                    <input className={styles.input} type="email" placeholder="Enter Your Email" onChange={(e) => { setEmail(e.target.value) }} /><br></br>
+                    <input className={styles.input} type="password" placeholder="Enter Your Password" onChange={(e) => { setPassword(e.target.value) }} /><br></br>
+                    <input className={styles.button} type="submit" value="Log-In" />
                 </form>
             </dialog>
             <h3>{errorFromServer ? "Error from server during Login" : ""}</h3>

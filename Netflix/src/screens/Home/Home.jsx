@@ -3,11 +3,12 @@ import { addToList, removeFromList, searchData } from '../../utils/utils';
 import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp } from "react-icons/bs";
 import mainTrailer from '../../video/homepagetrailer.mp4';
+import styles from './Home.module.css';
+import style from '../../App.css'
 
 const Home = ({ data, watchList, setWatchList }) => {
     const [suggestions, setSuggestions] = useState("");
     const [searchTerm, setSearchTerm] = useState("");
-
 
     const Elements = data.map(display =>
         <section key={display.id}>
@@ -20,9 +21,9 @@ const Home = ({ data, watchList, setWatchList }) => {
                 <h3>{display.year}</h3>
                 <img src={display.posterUrl} alt={display.title} />
                 <article className="buttonsCont">
-                    <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
-                    <button onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
-                    <button><BsHandThumbsUp fontSize="xx-large" color="white" /></button>
+                    <button className={style.button} onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
+                    <button className={style.button} onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
+                    <button className={style.button}><BsHandThumbsUp fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
         </section>)
@@ -37,7 +38,7 @@ const Home = ({ data, watchList, setWatchList }) => {
 
     return (
         <div className="MainContainer">
-            <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className="searchInput" type="text" inputMode="search" placeholder="Type movie/Tv series..." />
+            <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className={styles.searchInput} type="text" inputMode="search" placeholder="Type movie/Tv series..." />
             <div>
                 {suggestions && suggestions.map((suggestion, i) =>
                     <section key={i} className="searchResultCont" onClick={() => suggestionHandler(suggestion.title)}><article>
