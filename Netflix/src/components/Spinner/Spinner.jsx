@@ -1,9 +1,9 @@
 import './Spinner.module.css';
+import { Oval } from 'react-loader-spinner';
 
 const Spinner = () => {
     return (<section className='body'>
-        <h1>is loading</h1>
-        <img src="805.gif" alt="spinner" />
+        <Oval color="#b40606" height={80} width={80} />
     </section >)
 }
 
