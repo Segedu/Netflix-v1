@@ -4,5 +4,6 @@ dist
 dist-ssr
 *.local
 
-public
-
+key.js
+data.json
+test.json
