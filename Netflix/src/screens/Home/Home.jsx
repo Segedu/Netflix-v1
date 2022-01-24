@@ -45,12 +45,7 @@ const Home = ({ data, watchList, setWatchList }) => {
                     </article></section>)}
             </div>
             <div className="HomePageTrailer">
-                {/* <video
-                    autoPlay
-                    loop
-                    muted
-                ><source src={mainTrailer} type="video/mp4" />
-                </video> */}
+                <iframe width="1300" height="440" src="https://www.youtube.com/embed/EC9EFoot_a0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             {Elements}
         </div>)
