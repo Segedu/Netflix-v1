@@ -23,7 +23,7 @@
 
 section{
   position: relative;
-  width: 10rem;
+  width: 12rem;
   margin: 0.8rem;
   white-space: normal;
 }
@@ -34,7 +34,7 @@ section{
     display: none;
 }
 
-h2{
+.displayCont h2{
   position: absolute;
   margin-left: 4rem;
   z-index: 1;
@@ -45,7 +45,7 @@ h3{
   z-index: 1;
   top: 5rem; 
 }
-p{
+.displayCont p{
   position: absolute;
   font-weight: bold;
   top: 11rem;
@@ -63,7 +63,7 @@ p{
   border: none;
   margin-top: 0.4rem;
 }
-img{
+section img{
   position: relative;
   border-radius: 0.5rem;
   width: 100%;

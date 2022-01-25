@@ -1,0 +1,31 @@
+.Details{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 4rem;
+
+}
+img{
+    display: flex;
+    margin: 2rem;
+    width: 20rem;
+    height: 25rem;
+}
+.DetailsDisplay{
+    display: flex;
+    justify-content: space-evenly;
+    width: 14rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.DetailsDisplay button{
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+.DetailsDisplay h2{
+    width: 100%;
+}
