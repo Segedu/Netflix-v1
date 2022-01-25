@@ -4,8 +4,7 @@ import { HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp } from "react-icons/bs";
 import style from '../../App.css';
 
-const UserWatchList = ({ data, watchList, setWatchList }) => {
-    const [favoritesList, setFavoritesList] = useState([]);
+const UserWatchList = ({ data, watchList, setWatchList, favoritesList, setFavoritesList }) => {
 
     const watchListElements = watchList.map(watchListObj =>
         <section key={watchListObj.id}>

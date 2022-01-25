@@ -16,6 +16,7 @@ function App() {
   const [data, error, isLoading] = useFetch("/data/data.json");
   const [watchList, setWatchList] = useState([]);
   const [movieDetails, setMovieDetails] = useState("");
+  const [favoritesList, setFavoritesList] = useState([]);
 
   return (
     <BrowserRouter>
@@ -45,9 +46,9 @@ function App() {
           <Route exact path="/" component={() => <Home setMovieDetails={setMovieDetails} data={data} watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Login" component={() => <Login setAuth={setAuth} />} />
           <Route exact path="/Register" component={() => <Register setAuth={setAuth} />} />
-          <Route exact path="/Movies" component={() => <Movies setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
-          <Route exact path="/TvSeries" component={() => <TvSeries setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
-          <Route exact path="/UserWatchList" component={() => <UserWatchList data={data} watchList={watchList} setWatchList={setWatchList} />} />
+          <Route exact path="/Movies" component={() => <Movies favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
+          <Route exact path="/TvSeries" component={() => <TvSeries setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} data={data} error={error} isLoading={isLoading} />} />
+          <Route exact path="/UserWatchList" component={() => <UserWatchList data={data} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />} />
           <Route exact path="/Details" component={() => <Details data={data} watchList={watchList} setWatchList={setWatchList} movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
         </Switch>
       </div>

@@ -5,7 +5,7 @@ import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp } from "react-icons/bs";
 import { Redirect } from "react-router-dom";
 
-const TvSeries = ({ data, error, isLoading, watchList, setWatchList, setMovieDetails }) => {
+const TvSeries = ({ data, error, isLoading, watchList, setWatchList, setMovieDetails, favoritesList, setFavoritesList }) => {
     const [isRedirect, setIsRedirect] = useState(false);
 
     const tvSeriesElements = data.filter(TvSeriesType => TvSeriesType.type == "TvShow").map(tvSeries =>
@@ -19,10 +19,10 @@ const TvSeries = ({ data, error, isLoading, watchList, setWatchList, setMovieDet
                 <p>{tvSeries.year}</p>
                 <article className="buttonsCont">
                     <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}>
-                        <HiOutlinePlusCircle  title="Add to watch list" fontSize="xx-large" color="white" /></button>
+                        <HiOutlinePlusCircle title="Add to watch list" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}>
-                        <HiOutlineMinusCircle  title="Remove from watch list" fontSize="xx-large" color="white" /></button>
-                    <button><BsHandThumbsUp  title="Like" fontSize="xx-large" color="white" /></button>
+                        <HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => addToList(data, tvSeries.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
         </section>)
