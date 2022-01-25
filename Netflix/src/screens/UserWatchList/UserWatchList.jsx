@@ -11,8 +11,8 @@ const UserWatchList = ({ data, watchList, setWatchList, favoritesList, setFavori
             <img src={watchListObj.posterUrl} alt={watchListObj.title} />
             <article className="displayCont">
                 <h2>{watchListObj.title}</h2>
-                <p>{watchListObj.year}</p>
                 <p>{watchListObj.actors}</p>
+                <h3>{watchListObj.year}</h3>
                 <article className="buttonsCont">
                     <button onClick={() => removeFromList(watchListObj.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, watchListObj.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>

@@ -16,7 +16,7 @@ const Movies = ({ data, error, isLoading, watchList, setWatchList, setMovieDetai
             <article className="displayCont">
                 <h2>{movie.title}</h2>
                 <p>{movie.actors}</p>
-                <p>{movie.year}</p>
+                <h3>{movie.year}</h3>
                 <article className="buttonsCont">
                     <button onClick={() => addToList(data, movie.id, watchList, setWatchList, "watchList")}>
                         <HiOutlinePlusCircle title="Add to watch list" fontSize="xx-large" color="white" /></button>

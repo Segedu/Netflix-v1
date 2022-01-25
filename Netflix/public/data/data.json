@@ -1,6 +1,6 @@
 [
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDlkMWIzMWYtMjQ1NS00MzNhLWJkMDYtNDJjZjZmMmI1M2I0XkEyXkFqcGdeQXVyNzMwOTY2NTI@._V1_.jpg",
         "trailer": "https://youtu.be/1_empDUiWR4",
         "i": {
@@ -17,7 +17,7 @@
         "yr": "2007-2014"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTIzMDE0MDQ5Ml5BMl5BanBnXkFtZTcwNTUwMDUyMQ@@._V1_.jpg",
         "i": {
             "height": 755,
@@ -40,7 +40,7 @@
                 "seconds": "2:13"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BMmFkNzE0N2UtZDViYS00ZDFkLTk3OTEtMDZkMTQ3ZjgzOTY3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg",
                 "i": {
                     "height": 228,
@@ -51,7 +51,7 @@
                 "actors": "0:53"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjFkOWZlZmItZGM3NC00NWNjLWI1MmUtNGIwN2ZjODU3M2RjXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg",
                 "i": {
                     "height": 228,
@@ -66,7 +66,7 @@
         "year": 2004
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjA3ZTIxNDYtZTMxOC00ODIwLWFkYjktMGVkNGEwNDZkNWIzXkEyXkFqcGdeQXVyODcyMTQ4MTc@._V1_.jpg",
         "i": {
             "height": 600,
@@ -80,7 +80,7 @@
         "year": 2021
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjYwOWNhNjktNzk3NS00MjRkLTg1OTUtMmNjNDcwNmEwOWNhXkEyXkFqcGdeQXVyMTI0MDg2NDkz._V1_.jpg",
         "i": {
             "height": 1782,
@@ -95,7 +95,7 @@
         "yr": "2016-2021"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTM1OTBhZTgtZTc1NC00ZWFjLTk3NzgtZWU3MDI1ZDkxMWI5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
         "i": {
             "height": 1370,
@@ -109,7 +109,7 @@
         "year": 1977
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTlhNDI3NDktMjM3MS00ODhhLWI3ODYtZWE1YzE2YTE4ZmM4XkEyXkFqcGdeQXVyNzQzNDEyOQ@@._V1_.jpg",
         "i": {
             "height": 720,
@@ -123,7 +123,7 @@
         "year": 1958
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzE1MjJkYTMtY2JhZC00NWQ3LTgwZWQtY2FhMWMzNzhmMjYwXkEyXkFqcGdeQXVyMjI3NDAyNg@@._V1_.jpg",
         "i": {
             "height": 3000,
@@ -137,7 +137,7 @@
         "year": 2020
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BYjY3ODRlNGYtY2UzMS00ZjFiLWEyYmUtZTg1YmIzZjZhYmEzXkEyXkFqcGdeQXVyMzg1ODEwNQ@@._V1_.jpg",
         "i": {
             "height": 2626,
@@ -151,7 +151,7 @@
         "year": 1952
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         "i": {
             "height": 1536,
@@ -174,7 +174,7 @@
                 "seconds": "1:21"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjBlMTRjODMtMDMyYi00OGQ1LWJhNzYtYTYyMTcxOWI5MGM0XkEyXkFqcGdeQW1yb2Njbw@@._V1_.jpg",
                 "i": {
                     "height": 1080,
@@ -185,7 +185,7 @@
                 "actors": "3:45"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTc3NjU5NjU1NF5BMl5BanBnXkFtZTcwOTYwNTM5Ng@@._V1_.jpg",
                 "i": {
                     "height": 480,
@@ -200,7 +200,7 @@
         "year": 1994
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMmE2ZjYwNGYtYWMyMS00M2I0LWI4NDEtMzc1MTllMjk0ZmFmXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg",
         "i": {
             "height": 1114,
@@ -223,7 +223,7 @@
                 "seconds": "2:34"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDc4NmFmMjgtNGY2ZS00NDI5LWJiOTctOTE2NDA5YzQ4ODgyXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg",
                 "i": {
                     "height": 1080,
@@ -234,7 +234,7 @@
                 "actors": "1:40"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BMmIyYWQyNzMtZTIyYS00MjEwLThjMDEtZGIwMGU4MDVhZmUxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg",
                 "i": {
                     "height": 360,
@@ -249,7 +249,7 @@
         "year": 2006
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BOGY2MmQ5OWUtM2MwYS00MzJiLWI0MmUtZGM3YmMxMWNjYTM1XkEyXkFqcGdeQXVyMDAyMTY3Nw@@._V1_.jpg",
         "i": {
             "height": 1765,
@@ -264,7 +264,7 @@
         "yr": "1997-2002"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzY3NGI5MTItZDg5OC00MTJjLTgyZTgtN2Q3ZTA3NzRlNmI3XkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_.jpg",
         "i": {
             "height": 2374,
@@ -278,7 +278,7 @@
         "year": 2016
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzUzN2IwNDAtZWEzNy00MzUwLThhZDgtNzhkYzFjMjRlMTE5XkEyXkFqcGdeQXVyMTQ2MTg1Nzk@._V1_.jpg",
         "i": {
             "height": 660,
@@ -293,7 +293,7 @@
         "yr": "2018-"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTA0ZDVmN2MtOGUwNy00MDJlLWEyMDQtYWVmNzYzYjkwZTk1XkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_.jpg",
         "i": {
             "height": 770,
@@ -313,7 +313,7 @@
         "actors": "Actor, Shao nian pai (2019)"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTViNzYxNGQtMDBjZS00MjBiLThhODItYTc2ZjBkY2EyNjY5XkEyXkFqcGdeQXVyNTAxODk5MjI@._V1_.jpg",
         "i": {
             "height": 1867,
@@ -327,7 +327,7 @@
         "year": 2018
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjdhOGY1OTktYWJkZC00OGY5LWJhY2QtZmQzZDA2MzY5MmNmXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
         "i": {
             "height": 3000,
@@ -350,7 +350,7 @@
                 "seconds": "3:23"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2E4NDAxYjUtNTgxNi00YzhjLTgyNTQtMzcwNzU1ODU1ODgyXkEyXkFqcGdeQWplZmZscA@@._V1_.jpg",
                 "i": {
                     "height": 1080,
@@ -365,7 +365,7 @@
         "year": 1993
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjllMzcyMjItNjgxNS00ZDRiLTg4MTgtMjZmNDQ5NzFjNDBkXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
         "i": {
             "height": 630,
@@ -393,7 +393,7 @@
         "yr": "2022-"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTkxNDk5MDQ2MF5BMl5BanBnXkFtZTYwMTA0Nzc2._V1_.jpg",
         "i": {
             "height": 718,
@@ -407,7 +407,7 @@
         "year": 2003
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMmI3MGEyMzctZWMxYi00MGUyLWEwMTUtZTNlZjUxODk5ZDg4XkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg",
         "i": {
             "height": 2225,
@@ -421,7 +421,7 @@
         "year": 1977
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjEyMTU5MTk1N15BMl5BanBnXkFtZTgwMzIzMzczNTM@._V1_.jpg",
         "i": {
             "height": 2048,
@@ -435,7 +435,7 @@
         "year": 2018
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2ZhOWM0ZjQtNjI2OC00YjEzLThiMjUtNGI0NjU1OWNlNWEzXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_.jpg",
         "i": {
             "height": 3000,
@@ -449,7 +449,7 @@
         "year": 2020
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BZWFhNmI3OWQtOTU5Zi00ODA3LWExNjctMTllZWE2ZGE3ZTA1XkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg",
         "i": {
             "height": 2183,
@@ -473,7 +473,7 @@
         "posterUrl": "https://www.themoviedb.org/t/p/w500/jWdz6qEu4ShWjQbzlOaIMUVIFsH.jpg"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BYThmNGU0ZjgtMzU1Yy00NzUwLTgzNDAtM2FjM2MxODkyNTI5XkEyXkFqcGdeQXVyMjIzMTQ5NjE@._V1_.jpg",
         "i": {
             "height": 866,
@@ -487,7 +487,7 @@
         "year": 2005
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjBlZjcxMmUtOWEwYS00ZTU2LWI3NGMtZjM0OTQ5YzAwZjk0XkEyXkFqcGdeQXVyMzMxMDcyOTA@._V1_.jpg",
         "i": {
             "height": 492,
@@ -501,7 +501,7 @@
         "year": 2005
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BYmE0ZjIxM2QtZmZhNy00MDBiLTgyOWItZjg5MDAzNjI4OTZmXkEyXkFqcGdeQXVyNzI4MDMyMTU@._V1_.jpg",
         "i": {
             "height": 670,
@@ -516,7 +516,7 @@
         "yr": "2012-2012"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjYzYWE2MDctMDg5ZC00N2MxLTg2NDEtODI1MDY1YTJmMjY3L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjQxNTI2Mzg@._V1_.jpg",
         "i": {
             "height": 640,
@@ -530,7 +530,7 @@
         "year": 1973
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BODEyMWZiZTItZDNmZi00ZGI2LTk2NGEtYTQ0NGFmNjMxMWIyXkEyXkFqcGdeQXVyNjA0NzczNDQ@._V1_.jpg",
         "i": {
             "height": 2138,
@@ -566,7 +566,7 @@
         "yr": "2006-"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTc4Mjg3M2YtMzZlZi00MzE0LThkNTEtMmE4MTRhNzZlZjRmXkEyXkFqcGdeQXVyODc5Mjc4Nzg@._V1_.jpg",
         "i": {
             "height": 2048,
@@ -589,7 +589,7 @@
                 "seconds": "1:01"
             },
             {
-                "type": "TvShow",
+                "type": "series",
                 "posterUrl": "https://m.media-amazon.com/images/M/MV5BMThjYjUxMjEtMTU2Ny00MzViLWJiOWUtZTBmNWIwYzNiZjQxXkEyXkFqcGdeQXRoaXJkLXBhcnR5LXZpZGVvLXVwZGF0ZXI@._V1_.jpg",
                 "i": {
                     "height": 360,
@@ -605,7 +605,7 @@
         "yr": "2019-"
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTA2YTI5YjUtZWI4Zi00NWQ5LWFiYmEtOTBmNTUyNDAwNjllXkEyXkFqcGdeQXVyNjIzNzM4NzA@._V1_.jpg",
         "i": {
             "height": 4032,
@@ -632,7 +632,7 @@
         "year": 2019
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BZTEzMTA0ZjktY2VhYi00MTliLTlmZWUtYTVhZjEwZjJlOWZlXkEyXkFqcGdeQXVyNDM5NDkyODg@._V1_.jpg",
         "i": {
             "height": 797,
@@ -646,7 +646,7 @@
         "year": 2015
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMGJiMjhlNWYtMTM1Zi00MDJhLWJlNzMtMGRhZTJhNGJmZTcyXkEyXkFqcGdeQXVyNjc5NTU4MDk@._V1_.jpg",
         "i": {
             "height": 675,
@@ -660,7 +660,7 @@
         "year": 2018
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMThmMDUxOTMtM2JiMi00OGQ3LTg4NzQtYzRkODdkMjc0NGEyXkEyXkFqcGdeQXVyNTA3MjIxMTY@._V1_.jpg",
         "i": {
             "height": 720,
@@ -674,7 +674,7 @@
         "year": 2017
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTU5NWVlYzItMjI4YS00YzdmLTllYWEtYTIzODhiY2M3YmJkXkEyXkFqcGdeQXVyNjg5MzE4NTA@._V1_.jpg",
         "i": {
             "height": 517,
@@ -688,7 +688,7 @@
         "year": 2016
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTkzMTA1Mjk2OF5BMl5BanBnXkFtZTgwMTQ3OTI3NzE@._V1_.jpg",
         "i": {
             "height": 5400,
@@ -702,7 +702,7 @@
         "year": 2015
     },
     {
-        "type": "TvShow",
+        "type": "series",
         "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDgyNzVjM2UtMDg4MC00ZWI1LWE0NTItYWZkZGQ3YjdiMTkwXkEyXkFqcGdeQXVyMzEyOTkwNw@@._V1_.jpg",
         "i": {
             "height": 600,
@@ -763,22 +763,6 @@
     },
     {
         "type": "Movie",
-        "id": 5,
-        "title": "Valkyrie",
-        "year": "2008",
-        "runtime": "121",
-        "genres": [
-            "Drama",
-            "History",
-            "Thriller"
-        ],
-        "director": "Bryan Singer",
-        "actors": "Tom Cruise, Kenneth Branagh, Bill Nighy, Tom Wilkinson",
-        "plot": "A dramatization of the 20 July assassination and political coup plot by desperate renegade German Army officers against Hitler during World War II.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
         "id": 6,
         "title": "Ratatouille",
         "year": "2007",
@@ -807,21 +791,6 @@
         "actors": "Alexandre Rodrigues, Leandro Firmino, Phellipe Haagensen, Douglas Silva",
         "plot": "Two boys growing up in a violent neighborhood of Rio de Janeiro take different paths: one becomes a photographer, the other a drug dealer.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4ODQ3ODkzNV5BMl5BanBnXkFtZTYwOTc4NDI3._V1_SX300.jpg"
-    },
-    {
-        "type": "Movie",
-        "id": 8,
-        "title": "Memento",
-        "year": "2000",
-        "runtime": "113",
-        "genres": [
-            "Mystery",
-            "Thriller"
-        ],
-        "director": "Christopher Nolan",
-        "actors": "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano, Mark Boone Junior",
-        "plot": "A man juggles searching for his wife's murderer and keeping his short-term memory loss from being an obstacle.",
-        "posterUrl": "null"
     },
     {
         "type": "Movie",
@@ -873,21 +842,6 @@
     },
     {
         "type": "Movie",
-        "id": 12,
-        "title": "Taxi Driver",
-        "year": "1976",
-        "runtime": "113",
-        "genres": [
-            "Crime",
-            "Drama"
-        ],
-        "director": "Martin Scorsese",
-        "actors": "Diahnne Abbott, Frank Adu, Victor Argo, Gino Ardito",
-        "plot": "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
         "id": 13,
         "title": "No Country for Old Men",
         "year": "2007",
@@ -901,38 +855,6 @@
         "actors": "Tommy Lee Jones, Javier Bardem, Josh Brolin, Woody Harrelson",
         "plot": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_SX300.jpg"
-    },
-    {
-        "type": "Movie",
-        "id": 14,
-        "title": "Planet 51",
-        "year": "2009",
-        "runtime": "91",
-        "genres": [
-            "Animation",
-            "Adventure",
-            "Comedy"
-        ],
-        "director": "Jorge Blanco, Javier Abad, Marcos Martínez",
-        "actors": "Jessica Biel, John Cleese, Gary Oldman, Dwayne Johnson",
-        "plot": "An alien civilization is invaded by Astronaut Chuck Baker, who believes that the planet was uninhabited. Wanted by the military, Baker must get back to his ship before it goes into orbit without him.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
-        "id": 15,
-        "title": "Looper",
-        "year": "2012",
-        "runtime": "119",
-        "genres": [
-            "Action",
-            "Crime",
-            "Drama"
-        ],
-        "director": "Rian Johnson",
-        "actors": "Joseph Gordon-Levitt, Bruce Willis, Emily Blunt, Paul Dano",
-        "plot": "In 2074, when the mob wants to get rid of someone, the target is sent into the past, where a hired gun awaits - someone like Joe - who one day learns the mob wants to 'close the loop' by sending back Joe's future self for assassination.",
-        "posterUrl": "null"
     },
     {
         "type": "Movie",
@@ -1061,21 +983,6 @@
     },
     {
         "type": "Movie",
-        "id": 25,
-        "title": "Django Unchained",
-        "year": "2012",
-        "runtime": "165",
-        "genres": [
-            "Drama",
-            "Western"
-        ],
-        "director": "Quentin Tarantino",
-        "actors": "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington",
-        "plot": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
         "id": 26,
         "title": "The Silence of the Lambs",
         "year": "1991",
@@ -1089,21 +996,6 @@
         "actors": "Jodie Foster, Lawrence A. Bonney, Kasi Lemmons, Lawrence T. Wrentz",
         "plot": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer who skins his victims.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2NzkzMDI4OF5BMl5BanBnXkFtZTcwMDA0NzE1NA@@._V1_SX300.jpg"
-    },
-    {
-        "type": "Movie",
-        "id": 27,
-        "title": "American Beauty",
-        "year": "1999",
-        "runtime": "122",
-        "genres": [
-            "Drama",
-            "Romance"
-        ],
-        "director": "Sam Mendes",
-        "actors": "Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley",
-        "plot": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
-        "posterUrl": "null"
     },
     {
         "type": "Movie",
@@ -1182,22 +1074,7 @@
         "plot": "A wheelchair-bound photographer spies on his neighbours from his apartment window and becomes convinced one of them has committed murder.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 34,
-        "title": "Pan's Labyrinth",
-        "year": "2006",
-        "runtime": "118",
-        "genres": [
-            "Drama",
-            "Fantasy",
-            "War"
-        ],
-        "director": "Guillermo del Toro",
-        "actors": "Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones",
-        "plot": "In the falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.",
-        "posterUrl": ""
-    },
+    
     {
         "type": "Movie",
         "id": 35,
@@ -1262,38 +1139,6 @@
     },
     {
         "type": "Movie",
-        "id": 39,
-        "title": "Les Misérables",
-        "year": "2012",
-        "runtime": "158",
-        "genres": [
-            "Drama",
-            "Musical",
-            "Romance"
-        ],
-        "director": "Tom Hooper",
-        "actors": "Hugh Jackman, Russell Crowe, Anne Hathaway, Amanda Seyfried",
-        "plot": "In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
-        "id": 40,
-        "title": "L.A. Confidential",
-        "year": "1997",
-        "runtime": "138",
-        "genres": [
-            "Crime",
-            "Drama",
-            "Mystery"
-        ],
-        "director": "Curtis Hanson",
-        "actors": "Kevin Spacey, Russell Crowe, Guy Pearce, James Cromwell",
-        "plot": "As corruption grows in 1950s LA, three policemen - one strait-laced, one brutal, and one sleazy - investigate a series of murders with their own brand of justice.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
         "id": 41,
         "title": "Moneyball",
         "year": "2011",
@@ -1335,20 +1180,6 @@
         "actors": "Toni Servillo, Carlo Verdone, Sabrina Ferilli, Carlo Buccirosso",
         "plot": "Jep Gambardella has seduced his way through the lavish nightlife of Rome for decades, but after his 65th birthday and a shock from the past, Jep looks past the nightclubs and parties to find a timeless landscape of absurd, exquisite beauty.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0ODg1OTQ2Nl5BMl5BanBnXkFtZTgwNTc2MDY1MDE@._V1_SX300.jpg"
-    },
-    {
-        "type": "Movie",
-        "id": 44,
-        "title": "Gran Torino",
-        "year": "2008",
-        "runtime": "116",
-        "genres": [
-            "Drama"
-        ],
-        "director": "Clint Eastwood",
-        "actors": "Clint Eastwood, Christopher Carley, Bee Vang, Ahney Her",
-        "plot": "Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor, a Hmong teenager who tried to steal Kowalski's prized possession: a 1972 Gran Torino.",
-        "posterUrl": "null"
     },
     {
         "type": "Movie",
@@ -1441,21 +1272,7 @@
         "plot": "A silent movie star meets a young dancer, but the arrival of talking pictures sends their careers in opposite directions.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzk0NzQxMTM0OV5BMl5BanBnXkFtZTcwMzU4MDYyNQ@@._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 51,
-        "title": "Forrest Gump",
-        "year": "1994",
-        "runtime": "142",
-        "genres": [
-            "Comedy",
-            "Drama"
-        ],
-        "director": "Robert Zemeckis",
-        "actors": "Tom Hanks, Rebecca Williams, Sally Field, Michael Conner Humphreys",
-        "plot": "Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him.",
-        "posterUrl": "null"
-    },
+   
     {
         "type": "Movie",
         "id": 52,
@@ -1644,38 +1461,6 @@
     },
     {
         "type": "Movie",
-        "id": 66,
-        "title": "The Pianist",
-        "year": "2002",
-        "runtime": "150",
-        "genres": [
-            "Biography",
-            "Drama",
-            "War"
-        ],
-        "director": "Roman Polanski",
-        "actors": "Adrien Brody, Emilia Fox, Michal Zebrowski, Ed Stoppard",
-        "plot": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
-        "id": 67,
-        "title": "Alive",
-        "year": "1993",
-        "runtime": "120",
-        "genres": [
-            "Adventure",
-            "Biography",
-            "Drama"
-        ],
-        "director": "Frank Marshall",
-        "actors": "Ethan Hawke, Vincent Spano, Josh Hamilton, Bruce Ramsay",
-        "plot": "Uruguayan rugby team stranded in the snow swept Andes are forced to use desperate measures to survive after a plane crash.",
-        "posterUrl": ""
-    },
-    {
-        "type": "Movie",
         "id": 69,
         "title": "American Gangster",
         "year": "2007",
@@ -1737,22 +1522,7 @@
         "plot": "Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyNjkxNzEyMl5BMl5BanBnXkFtZTYwMjc3MDE3._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 74,
-        "title": "Pirates of the Caribbean: On Stranger Tides",
-        "year": "2011",
-        "runtime": "136",
-        "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-        ],
-        "director": "Rob Marshall",
-        "actors": "Johnny Depp, Penélope Cruz, Geoffrey Rush, Ian McShane",
-        "plot": "Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth, only to discover that Blackbeard and his daughter are after it too.",
-        "posterUrl": "null"
-    },
+  
     {
         "type": "Movie",
         "id": 75,
@@ -1785,22 +1555,7 @@
         "plot": "Blacksmith Will Turner teams up with eccentric pirate \"Captain\" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyNDM4MTc2N15BMl5BanBnXkFtZTYwNDk0Mjc3._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 77,
-        "title": "The Lord of the Rings: The Return of the King",
-        "year": "2003",
-        "runtime": "201",
-        "genres": [
-            "Action",
-            "Adventure",
-            "Drama"
-        ],
-        "director": "Peter Jackson",
-        "actors": "Noel Appleby, Ali Astin, Sean Astin, David Aston",
-        "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-        "posterUrl": "null"
-    },
+   
     {
         "type": "Movie",
         "id": 78,
@@ -2037,21 +1792,7 @@
         "plot": "Nineteen-year-old Alice returns to the magical world from her childhood adventure, where she reunites with her old friends and learns of her true destiny: to end the Red Queen's reign of terror.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwNjAxMTc0Nl5BMl5BanBnXkFtZTcwODc3ODk5Mg@@._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 94,
-        "title": "Gandhi",
-        "year": "1982",
-        "runtime": "191",
-        "genres": [
-            "Biography",
-            "Drama"
-        ],
-        "director": "Richard Attenborough",
-        "actors": "Ben Kingsley, Candice Bergen, Edward Fox, John Gielgud",
-        "plot": "Gandhi's character is fully explained as a man of nonviolence. Through his patience, he is able to drive the British out of the subcontinent. And the stubborn nature of Jinnah and his commitment towards Pakistan is portrayed.",
-        "posterUrl": "null"
-    },
+   
     {
         "type": "Movie",
         "id": 95,
@@ -2084,22 +1825,7 @@
         "plot": "A murder mystery brings together a private eye, a struggling actress, and a thief masquerading as an actor.",
         "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN91JPM27k_7v5BubYnZyOo7jIMmB4_pwYJQ&usqp=CAU"
     },
-    {
-        "type": "Movie",
-        "id": 97,
-        "title": "The Quiet American",
-        "year": "2002",
-        "runtime": "101",
-        "genres": [
-            "Drama",
-            "Mystery",
-            "Romance"
-        ],
-        "director": "Phillip Noyce",
-        "actors": "Michael Caine, Brendan Fraser, Do Thi Hai Yen, Rade Serbedzija",
-        "plot": "An older British reporter vies with a young U.S. doctor for the affections of a beautiful Vietnamese woman.",
-        "posterUrl": "null"
-    },
+   
     {
         "type": "Movie",
         "id": 98,
@@ -2159,22 +1885,6 @@
         "actors": "Matthew McConaughey, Jennifer Garner, Jared Leto, Denis O'Hare",
         "plot": "In 1985 Dallas, electrician and hustler Ron Woodroof works around the system to help AIDS patients get the medication they need after he is diagnosed with the disease.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwMTA4MzgyNF5BMl5BanBnXkFtZTgwMjEyMjE0MDE@._V1_SX300.jpg"
-    },
-    {
-        "type": "Movie",
-        "id": 103,
-        "title": "Frida",
-        "year": "2002",
-        "runtime": "123",
-        "genres": [
-            "Biography",
-            "Drama",
-            "Romance"
-        ],
-        "director": "Julie Taymor",
-        "actors": "Salma Hayek, Mía Maestro, Alfred Molina, Antonio Banderas",
-        "plot": "A biography of artist Frida Kahlo, who channeled the pain of a crippling injury and her tempestuous marriage into her work.",
-        "posterUrl": "null"
     },
     {
         "type": "Movie",
@@ -2487,37 +2197,7 @@
         "plot": "A woman along with her lover, plan to con a rich man by marrying him and on earning his trust running away with all his money. Everything goes as planned until she actually begins to fall in love with him.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODg3Mjg0MDY4M15BMl5BanBnXkFtZTcwNjY5MDQ2NA@@._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 125,
-        "title": "Shrek Forever After",
-        "year": "2010",
-        "runtime": "93",
-        "genres": [
-            "Animation",
-            "Adventure",
-            "Comedy"
-        ],
-        "director": "Mike Mitchell",
-        "actors": "Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas",
-        "plot": "Rumpelstiltskin tricks a mid-life crisis burdened Shrek into allowing himself to be erased from existence and cast in a dark alternate timeline where Rumpel rules supreme.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
-        "id": 126,
-        "title": "Before Midnight",
-        "year": "2013",
-        "runtime": "109",
-        "genres": [
-            "Drama",
-            "Romance"
-        ],
-        "director": "Richard Linklater",
-        "actors": "Ethan Hawke, Julie Delpy, Seamus Davey-Fitzpatrick, Jennifer Prior",
-        "plot": "We meet Jesse and Celine nine years on in Greece. Almost two decades have passed since their first meeting on that train bound for Vienna.",
-        "posterUrl": "null"
-    },
+
     {
         "type": "Movie",
         "id": 127,
@@ -2534,20 +2214,7 @@
         "plot": "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 128,
-        "title": "Troy",
-        "year": "2004",
-        "runtime": "163",
-        "genres": [
-            "Adventure"
-        ],
-        "director": "Wolfgang Petersen",
-        "actors": "Julian Glover, Brian Cox, Nathan Jones, Adoni Maropis",
-        "plot": "An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved.",
-        "posterUrl": "null"
-    },
+    
     {
         "type": "Movie",
         "id": 129,
@@ -2593,22 +2260,6 @@
         "actors": "Ray Romano, John Leguizamo, Denis Leary, Goran Visnjic",
         "plot": "Set during the Ice Age, a sabertooth tiger, a sloth, and a wooly mammoth find a lost human infant, and they try to return him to his tribe.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNzI1ODA0MF5BMl5BanBnXkFtZTYwODIxODY3._V1_SX300.jpg"
-    },
-    {
-        "type": "Movie",
-        "id": 132,
-        "title": "The Lord of the Rings: The Fellowship of the Ring",
-        "year": "2001",
-        "runtime": "178",
-        "genres": [
-            "Action",
-            "Adventure",
-            "Drama"
-        ],
-        "director": "Peter Jackson",
-        "actors": "Alan Howard, Noel Appleby, Sean Astin, Sala Baker",
-        "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.",
-        "posterUrl": "null"
     },
     {
         "type": "Movie",
@@ -2692,22 +2343,6 @@
     },
     {
         "type": "Movie",
-        "id": 138,
-        "title": "Vertigo",
-        "year": "1958",
-        "runtime": "128",
-        "genres": [
-            "Mystery",
-            "Romance",
-            "Thriller"
-        ],
-        "director": "Alfred Hitchcock",
-        "actors": "James Stewart, Kim Novak, Barbara Bel Geddes, Tom Helmore",
-        "plot": "A San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her.",
-        "posterUrl": "null"
-    },
-    {
-        "type": "Movie",
         "id": 139,
         "title": "Whiplash",
         "year": "2014",
@@ -2769,21 +2404,7 @@
         "plot": "In the dead of a Wyoming winter, a bounty hunter and his prisoner find shelter in a cabin currently inhabited by a collection of nefarious characters.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@._V1_SX300.jpg"
     },
-    {
-        "type": "Movie",
-        "id": 145,
-        "title": "A Separation",
-        "year": "2011",
-        "runtime": "123",
-        "genres": [
-            "Drama",
-            "Mystery"
-        ],
-        "director": "Asghar Farhadi",
-        "actors": "Peyman Moaadi, Leila Hatami, Sareh Bayat, Shahab Hosseini",
-        "plot": "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
-        "posterUrl": "null"
-    },
+    
     {
         "type": "Movie",
         "id": 146,
@@ -2799,5 +2420,843 @@
         "actors": "Ryan Gosling, Rudy Eisenzopf, Casey Groves, Charlie Talbert",
         "plot": "Four denizens in the world of high-finance predict the credit and housing bubble collapse of the mid-2000s, and decide to take on the big banks for their greed and lack of foresight.",
         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDc4MThhN2EtZjMzNC00ZDJmLThiZTgtNThlY2UxZWMzNjdkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+    },
+   
+    {
+        "Title": "The Front Page",
+        "Year": "1974",
+        "imdbID": "tt0071524",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDYxMzQwZTctNWNlNi00NjE4LTk4YzgtZDc1YmNmMmZhOTM3XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Notorious Bettie Page",
+        "Year": "2005",
+        "imdbID": "tt0404802",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjAzODM0MTUyNl5BMl5BanBnXkFtZTgwNTQzNjU0MTI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Page Turner",
+        "Year": "2006",
+        "imdbID": "tt0487503",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOWIyMDhkYWYtMzZmOC00NGEwLWI1ZmUtMTdjODg1NGE1M2M5XkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Page 3",
+        "Year": "2005",
+        "imdbID": "tt0443708",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTY1NDUxNTU5MF5BMl5BanBnXkFtZTcwOTIxMTg4Mw@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Third Page",
+        "Year": "1999",
+        "imdbID": "tt0208606",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDJkMmNlNDQtMWMyOC00ZGZiLWIxOTgtODg3ZmE0MWZjZWQ5XkEyXkFqcGdeQXVyNzM0MDQ1Mw@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "A Page of Madness",
+        "Year": "1926",
+        "imdbID": "tt0017048",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTBlYjUxNTEtOTM5Zi00ZWUxLWJjNDEtYjcyNzRmODhmN2VkXkEyXkFqcGdeQXVyOTUzMjk0NDE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Page One: Inside the New York Times",
+        "Year": "2011",
+        "imdbID": "tt1787777",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNDUzMjk0MjA3MF5BMl5BanBnXkFtZTcwOTczMjEyNQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Front Page",
+        "Year": "1931",
+        "imdbID": "tt0021890",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTQzODg2MDQtMmM5Ni00YjBjLWFlMTAtOGRhZTQwNzJhZTViXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Front Page Woman",
+        "Year": "1935",
+        "imdbID": "tt0026388",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTZjNmViODEtN2M4ZS00N2M0LThmODItM2MwOGMwNjU0YmY4XkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Metrix",
+        "Year": "1999",
+        "Rated": "N/A",
+        "Released": "01 May 1999",
+        "Runtime": "N/A",
+        "Genre": "Comedy",
+        "Director": "J.P. Mass",
+        "Writer": "Dave Nystrom, Damonde Tschritter",
+        "Actors": "Damonde Tschritter, Dave Nystrom, Carter Hortie, Reed Hortie",
+        "Plot": "Two actors from a crappy TV show get sucked into an alternate world to engage against U.S. agents who are in Canada trying to destroy the metric system.",
+        "Language": "English",
+        "Country": "Canada",
+        "Awards": "N/A",
+        "posterUrl": "N/A",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.9/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "7",
+        "imdbID": "tt4730778",
+        "type": "Movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Star Wars: Episode IV - A New Hope",
+        "Year": "1977",
+        "imdbID": "tt0076759",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Wars: Episode V - The Empire Strikes Back",
+        "Year": "1980",
+        "imdbID": "tt0080684",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Wars: Episode VI - Return of the Jedi",
+        "Year": "1983",
+        "imdbID": "tt0086190",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Wars: Episode VII - The Force Awakens",
+        "Year": "2015",
+        "imdbID": "tt2488496",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Wars: Episode I - The Phantom Menace",
+        "Year": "1999",
+        "imdbID": "tt0120915",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Wars: Episode III - Revenge of the Sith",
+        "Year": "2005",
+        "imdbID": "tt0121766",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Wars: Episode II - Attack of the Clones",
+        "Year": "2002",
+        "imdbID": "tt0121765",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Wars: Episode VIII - The Last Jedi",
+        "Year": "2017",
+        "imdbID": "tt2527336",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Star Trek",
+        "Year": "2009",
+        "imdbID": "tt0796366",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjE5NDQ5OTE4Ml5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Rogue One: A Star Wars Story",
+        "Year": "2016",
+        "imdbID": "tt3748528",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Anima",
+        "Year": "2019",
+        "imdbID": "tt10516984",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNWI0MWFhODItYWQ5ZS00NTE5LTg0NDQtM2MwMmNkZjY0MzNhXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Ánima",
+        "Year": "2020",
+        "imdbID": "tt7918240",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTQ0YTJlMWYtYzU3Yi00MzgyLTg3OGQtYzY2MzRmNzQ5NDg2XkEyXkFqcGdeQXVyMjgzMTAwMzE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Anima",
+        "Year": "2013",
+        "imdbID": "tt1837507",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTg4NTg1NzM3OF5BMl5BanBnXkFtZTcwMTMzNjQ2Nw@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Anima Yell!",
+        "Year": "2018–",
+        "imdbID": "tt9278360",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjdiYjhiMmQtMWUxNC00YjZlLWIxNjMtOTBmMmQwYjA4MTc3XkEyXkFqcGdeQXVyOTA1ODU0Mzc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Ánima Buenos Aires",
+        "Year": "2012",
+        "imdbID": "tt2323723",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTk1OGEyYWUtMmIxNy00Y2ZmLTlhMWUtNDRmNDRhODJhZjdjXkEyXkFqcGdeQXVyMjU2MTMyNjc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Luz, Anima, Ação",
+        "Year": "2013",
+        "imdbID": "tt3543026",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTU4MDY1MDA5NF5BMl5BanBnXkFtZTgwNDAxMDczMTE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Last Action Hero",
+        "Year": "1993",
+        "imdbID": "tt0107362",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjdhOGY1OTktYWJkZC00OGY5LWJhY2QtZmQzZDA2MzY5MmNmXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Looney Tunes: Back in Action",
+        "Year": "2003",
+        "imdbID": "tt0318155",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTkxNDk5MDQ2MF5BMl5BanBnXkFtZTYwMTA0Nzc2._V1_SX300.jpg"
+    },
+    {
+        "Title": "A Civil Action",
+        "Year": "1998",
+        "imdbID": "tt0120633",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZmEzNjhiZWEtNTM5OS00ZmQyLThhYjEtNjY4ZDZhOGFkMzI4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Missing in Action",
+        "Year": "1984",
+        "imdbID": "tt0087727",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZGRkY2M1YWMtYmZiMy00NDMzLTg0OTctYWNmNzllMGNlYmMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Action Point",
+        "Year": "2018",
+        "imdbID": "tt6495770",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjEyMTU5MTk1N15BMl5BanBnXkFtZTgwMzIzMzczNTM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Action Jackson",
+        "Year": "1988",
+        "imdbID": "tt0094612",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZWFhNmI3OWQtOTU5Zi00ODA3LWExNjctMTllZWE2ZGE3ZTA1XkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "321 Action",
+        "Year": "2020",
+        "imdbID": "tt13423846",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTRmYzgyZjEtN2UyZS00NDYxLTlkMDctMGJjZjY0ODExNWE5XkEyXkFqcGdeQXVyNjI2ODk3NTM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Missing in Action 2: The Beginning",
+        "Year": "1985",
+        "imdbID": "tt0089604",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTUzODkyODg4Ml5BMl5BanBnXkFtZTcwOTQ2NjE2NA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Class Action",
+        "Year": "1991",
+        "imdbID": "tt0101590",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNWY5Mjk4ZmItMTAzYS00NWE3LWEzYzYtNDgzY2MwMzA3MDIzXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Braddock: Missing in Action III",
+        "Year": "1988",
+        "imdbID": "tt0094792",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZTRjODU0MTUtMjBmMi00ZTBmLTk2MDYtOWQzYjg1M2FiZDJiXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_SX300.jpg"
+    },
+    {
+        "Title": "American Crime Story",
+        "Year": "2016–",
+        "imdbID": "tt2788432",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMGExZjgzNzktNzUwYS00ZDgxLWFlMTktMzZhOWQxMGM0N2VkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Crime Scene Investigation",
+        "Year": "2000–2015",
+        "imdbID": "tt0247082",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYjRlZjFmNTktYzg0ZC00OWJlLWJlN2EtOGQ1OTRiOTFiMWE3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "True Crime",
+        "Year": "1999",
+        "imdbID": "tt0139668",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjgwMjkxNzY4OV5BMl5BanBnXkFtZTcwNzIyNTY1Mw@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "An American Crime",
+        "Year": "2007",
+        "imdbID": "tt0802948",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDc5YjRlMzctODMxYS00MDA4LWFhNjktMjhlODBkZTE0ZDQwXkEyXkFqcGdeQXVyMjQ2MTk1OTE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Inside Look: The People v. O.J. Simpson - American Crime Story",
+        "Year": "2016",
+        "imdbID": "tt6205862",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTgyZmYzM2YtZDQ3YS00ODJhLWIyYzEtN2QzYjA5YTZjZGM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Henry's Crime",
+        "Year": "2010",
+        "imdbID": "tt1220888",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjI4MzM4OTY3MF5BMl5BanBnXkFtZTcwOTMzMjI3NA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Life of Crime",
+        "Year": "2013",
+        "imdbID": "tt1663207",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjE0NzQ1OTEwOV5BMl5BanBnXkFtZTgwMTY0MzUxMjE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Delhi Crime",
+        "Year": "2019–",
+        "imdbID": "tt9398466",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BODg1MTYyZjYtMzJhZi00ZjI3LWI3MTItZTFhZDNhZmYwMjYwXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Crime Scene: The Vanishing at the Cecil Hotel",
+        "Year": "2021",
+        "imdbID": "tt13837672",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BN2Y5MzMzYTgtZjVhNy00YTcwLWJhY2MtNzZhNTcyZTIxZTdjXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Crime of Padre Amaro",
+        "Year": "2002",
+        "imdbID": "tt0313196",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTNjN2FjNDktM2E0YS00NDU3LWFkYmEtZDAwNDc1MDUzMTBjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+    },
+    {
+        "Title": "A Classic Horror Story",
+        "Year": "2021",
+        "imdbID": "tt12877640",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGZmODA3ZjAtMDU4Zi00MWMxLWEzNTAtMGZmMmNjZGFlOTRhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Classic",
+        "Year": "2003",
+        "imdbID": "tt0348568",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BODNlYjA2ODAtYmZkYS00YWJiLTg3Y2QtNWQxYjdlN2Y5ZWVjXkEyXkFqcGdeQXVyNTMyMDkwMTE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Classic Albums: Pink Floyd - The Making of 'The Dark Side of the Moon'",
+        "Year": "2003",
+        "imdbID": "tt0398868",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTc2MjQzMjE0OV5BMl5BanBnXkFtZTcwMzE1MTIyMQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Classic Albums: Metallica - The Black Album",
+        "Year": "2001",
+        "imdbID": "tt0370418",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGFmYjBjOWMtMmI5Ni00YTI3LThiNzAtYTdmYTI4ZDYzNjQ2XkEyXkFqcGdeQXVyNjQyNDE5NjI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Muppet Classic Theater",
+        "Year": "1994",
+        "imdbID": "tt0213096",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BN2FiZDQ3YzctYTY1NC00ZTUwLWFkYjItNTBkY2NhMmJhZDUwXkEyXkFqcGdeQXVyNDUxNjc5NjY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Chasing Classic Cars",
+        "Year": "2008–",
+        "imdbID": "tt1357604",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzY0YTU2MjYtZmVhOS00MjZjLWExY2UtNmJlMTAxZTE1NDg3XkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_SX300.jpg"
+    },
+    {
+        "Title": "Masterpiece Classic",
+        "Year": "1971–",
+        "imdbID": "tt0066684",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYTc4NGI1ZTMtNTJlMS00MGUyLThiYjUtZDk3MTI1NGE4ZTQ5XkEyXkFqcGdeQXVyODg3NDc1OTE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Story of Frozen: Making a Disney Animated Classic",
+        "Year": "2014",
+        "imdbID": "tt4007494",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTk0NjAzNjg4NF5BMl5BanBnXkFtZTgwNDQ3NjIwMzE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Classic Albums: Nirvana - Nevermind",
+        "Year": "2005",
+        "imdbID": "tt1058514",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTU1Nzg4MjE4Ml5BMl5BanBnXkFtZTgwMzE1NzAwNzE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "40 Years of Rocky: The Birth of a Classic",
+        "Year": "2020",
+        "imdbID": "tt6099284",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTQ1NmFjOWItNGRkMi00ZmQ1LThkOTQtZDUwYzczZjkyY2UwXkEyXkFqcGdeQXVyMTEzMTA2ODY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "True Romance",
+        "Year": "1993",
+        "imdbID": "tt0108399",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYWRhYWJjNGEtMjNhNi00NzFkLTk1ZGUtNjNmM2FlNTNhNWRjXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "College Romance",
+        "Year": "2018–",
+        "imdbID": "tt8809646",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzM3NGIzNDctNWEyOC00ZTY1LWJhNmUtYzZkYmMxNDUwZDA5XkEyXkFqcGdeQXVyNDY4NjAxNTc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Romance & Cigarettes",
+        "Year": "2005",
+        "imdbID": "tt0368222",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjEyMDAxNzM1Nl5BMl5BanBnXkFtZTcwMjkwMjc0MQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Romance",
+        "Year": "1999",
+        "imdbID": "tt0194314",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjY4NDgwNTI5MV5BMl5BanBnXkFtZTcwMDI1NTcxMQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Shuddh Desi Romance",
+        "Year": "2013",
+        "imdbID": "tt2988272",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTU0NjI2MTI0Ml5BMl5BanBnXkFtZTcwNjI4MzY5OQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Office Romance",
+        "Year": "1977",
+        "imdbID": "tt0076727",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTY3YTI1MWMtOWMyZi00MDU3LTkwY2MtY2U2MzQwZWIzNmM3XkEyXkFqcGdeQXVyNjg3MTIwODI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Murphy's Romance",
+        "Year": "1985",
+        "imdbID": "tt0089643",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2E1OTkyN2QtMjI4NS00MGRmLTkxZmMtNjgyY2NhNTkzMjEwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "A Little Romance",
+        "Year": "1979",
+        "imdbID": "tt0079477",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNDVhNjQyMTQtYTFhNy00MWNmLTkwZjEtNjc3MmQ2MDZhZmIwXkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Guilty of Romance",
+        "Year": "2011",
+        "imdbID": "tt1743724",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjQ1ZTE1NGEtNzVlOS00ODY5LThlYzItZDYxZDY5NzgxOWZlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Romance Is a Bonus Book",
+        "Year": "2019",
+        "imdbID": "tt9130542",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTZiMzZjZDUtMmU2MS00MWU4LWFmODYtZmU3ZjlhODYwMGJkXkEyXkFqcGdeQXVyMzE4MDkyNTA@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The King of Comedy",
+        "Year": "1982",
+        "imdbID": "tt0085794",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTViNjlkYjgtMmE3Zi00ZGVkLTkyMjMtNzc3YzAwNzNiODQ1XkEyXkFqcGdeQXVyMjA0MzYwMDY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "A Midsummer Night's Sex Comedy",
+        "Year": "1982",
+        "imdbID": "tt0084329",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTMxMTM0MTk3Nl5BMl5BanBnXkFtZTcwOTEyODI1NA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Bugs Bunny/Looney Tunes Comedy Hour",
+        "Year": "1985–1986",
+        "imdbID": "tt0088491",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDEwNTAwNjMtNTgwZC00Y2RjLTliOTYtZWI4NGNlNjI4ZTVjXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg"
+    },
+    {
+        "Title": "Fear City: A Family-Style Comedy",
+        "Year": "1994",
+        "imdbID": "tt0109440",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjVlZDliMWItMDI3ZS00OTc3LTlmZWYtZmMxZDlkMTlhYTNhXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Broken Hearts Club: A Romantic Comedy",
+        "Year": "2000",
+        "imdbID": "tt0222850",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMmZlODkzNmItZmIwZi00OGYxLTkwMjQtMzlhYmYwNjMwNzlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "King of Comedy",
+        "Year": "1999",
+        "imdbID": "tt0188766",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYjg4NWNjYWItZTQzOS00MzE2LWE4MjEtOTU1NjIxNTBjMDY3XkEyXkFqcGdeQXVyOTMzMDk1NTY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Louis C.K.: Live at the Comedy Store",
+        "Year": "2015",
+        "imdbID": "tt4368814",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BODJlMmIyNjEtZDQ0ZS00MGIyLWEyZmYtOTQyYTQyMWJkODhmXkEyXkFqcGdeQXVyMjQ0ODQ0MzQ@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Comedy of Terrors",
+        "Year": "1963",
+        "imdbID": "tt0056943",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYWRmNGQxM2MtN2I5OS00NTc1LTlmNGEtMGYwYTIyMjE3NjI5XkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Original Kings of Comedy",
+        "Year": "2000",
+        "imdbID": "tt0236388",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTI5NDY1NDU1M15BMl5BanBnXkFtZTcwODcyNTMyMQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "My Teen Romantic Comedy SNAFU",
+        "Year": "2013–",
+        "imdbID": "tt2703720",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYzRkMWFkNGMtMzQ0Zi00MWQ2LTk1MjgtODJkZjY3NTQyYTQzXkEyXkFqcGdeQXVyNTIxNDgzOTg@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Modern Family",
+        "Year": "2009–2020",
+        "imdbID": "tt1442437",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzRhNWIxYTEtYjc2NS00YWFlLWFhOGEtMDZiMWM1M2RkNDkyXkEyXkFqcGdeQXVyNjc0MjkzNjc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Family Guy",
+        "Year": "1999–",
+        "imdbID": "tt0182576",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Addams Family",
+        "Year": "1991",
+        "imdbID": "tt0101272",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BODc1NmY0MDUtNjUzNS00ODdhLWJlN2ItMTgwZjczZjI0MDkyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Family",
+        "Year": "2013",
+        "imdbID": "tt2404311",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjE2MzI0MzkyNV5BMl5BanBnXkFtZTcwMjQ2MDM2OQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Family Man",
+        "Year": "2000",
+        "imdbID": "tt0218967",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYzYzMTQ4NDYtNWRkZi00NTYxLThlZDItMzI1MmU1MmU5ZWQ3XkEyXkFqcGdeQXVyNDA5Mjg5MjA@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Instant Family",
+        "Year": "2018",
+        "imdbID": "tt7401588",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTkzMzgzMTc1OF5BMl5BanBnXkFtZTgwNjQ4MzE0NjM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Addams Family Values",
+        "Year": "1993",
+        "imdbID": "tt0106220",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZWFhNjY0YjItNjM5NC00NzAwLWI3ZWUtMTlkNTA0ZWVkNjBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Family Man",
+        "Year": "2019–",
+        "imdbID": "tt9544034",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzRjZWVmMzItNTdmYS00OWEzLTgyOGUtNThiNTU2ZThlYjY0XkEyXkFqcGdeQXVyMTIxMDk2NDE4._V1_SX300.jpg"
+    },
+    {
+        "Title": "Fighting with My Family",
+        "Year": "2019",
+        "imdbID": "tt6513120",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNWM0NGUxMzUtMjRlZS00OWZlLTlkZDMtMzJhOWVmZDY2ODczXkEyXkFqcGdeQXVyOTQxNzM2MjY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Family Stone",
+        "Year": "2005",
+        "imdbID": "tt0356680",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTkwMjM4MjMxMV5BMl5BanBnXkFtZTcwNjM1OTQzMQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Captain Marvel",
+        "Year": "2019",
+        "imdbID": "tt4154664",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Marvel One-Shot: Agent Carter",
+        "Year": "2013",
+        "imdbID": "tt3067038",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDIwZTM4M2QtMWFhYy00N2VmLWFlMjItMzI3NjBjYTc0OTMxXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Marvel One-Shot: All Hail the King",
+        "Year": "2014",
+        "imdbID": "tt3438640",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZGFkMTZkMDQtNzM4Yy00YWEwLTkzOWEtZTMyNDRlNmJhYWJhXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Marvel One-Shot: Item 47",
+        "Year": "2012",
+        "imdbID": "tt2247732",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjNlMzAxNmQtOGEwZi00NTEyLWI0NWYtMTlhNmE2YTA3ZDVhXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+        "Year": "2011",
+        "imdbID": "tt2011109",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYmVlYTg3N2QtMWM2OS00YWQyLWI2M2MtMDc0ZjBkZjk1MTY3XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Marvel One-Shot: The Consultant",
+        "Year": "2011",
+        "imdbID": "tt2011118",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGE4YjU5MDAtYzYzMC00M2RlLTk0NDgtNDU1MjgyMGI0MjI3XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Marvel Studios: Legends",
+        "Year": "2021–",
+        "imdbID": "tt13650480",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGE3ODYyNDYtODk1NS00ODRmLTk5YTYtOGMyMTZkYTEyODhlXkEyXkFqcGdeQXVyODQ4MjU1MDk@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Lego Marvel Super Heroes",
+        "Year": "2013",
+        "imdbID": "tt2620204",
+        "type": "game",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Marvel Studios: Assembled",
+        "Year": "2021–",
+        "imdbID": "tt14094206",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGQ0MjI2ZjctNzk3Zi00ZWYyLThhMDAtMWIwNmJkYWVlYjk4XkEyXkFqcGdeQXVyMTU5OTc2NTk@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Lego Marvel Super Heroes: Maximum Overload",
+        "Year": "2013",
+        "imdbID": "tt3322904",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZWUzMjMxNmItNDRjYi00NGQ0LTk1NTQtYWIwMzQwNGNlYWRiXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Crime Scene Investigation",
+        "Year": "2000–2015",
+        "imdbID": "tt0247082",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYjRlZjFmNTktYzg0ZC00OWJlLWJlN2EtOGQ1OTRiOTFiMWE3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Miami",
+        "Year": "2002–2012",
+        "imdbID": "tt0313043",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTU3ZTI5ZGEtYjhiMy00ODU4LTgyM2UtNDhlYjBhMjc4MjIwXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: NY",
+        "Year": "2004–2013",
+        "imdbID": "tt0395843",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzQzNDZiODktZDFjOS00YWU2LWJlOTAtZGUzMzg1ZmRiODAxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Cyber",
+        "Year": "2015–2016",
+        "imdbID": "tt3560060",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDFjYmE5ZDQtNWJlYy00N2E5LWIzNDUtY2YxYzkwZDY1ZGMzXkEyXkFqcGdeQXVyMzExODYzNzc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Vegas",
+        "Year": "2021–",
+        "imdbID": "tt12887536",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjJiZjcwZGUtMDQ2ZS00NzRlLTk3OWQtMWE3MDE1NGI3NDVlXkEyXkFqcGdeQXVyMTMxNjUyMDkx._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Immortality",
+        "Year": "2015",
+        "imdbID": "tt4688366",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYWIwNWMwNjAtZGU1OS00MDQxLWI5YjgtMzBhODY3YzIzM2Q0XkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Miami",
+        "Year": "2004",
+        "imdbID": "tt0442658",
+        "type": "game",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDExODk4YTEtMjVhNC00N2M1LWI5MmQtYTk3MjUzOTMzMjQ2XkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Crime Scene Investigation - Dark Motives",
+        "Year": "2004",
+        "imdbID": "tt0405814",
+        "type": "game",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjE3MTM1NDI0M15BMl5BanBnXkFtZTcwOTIzNTYyMQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Crime Scene Investigation",
+        "Year": "2003",
+        "imdbID": "tt0361424",
+        "type": "game",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMGU1OWFiNGYtM2E5My00MzMzLWJiNWItYmIwZjA3N2JlOGEyXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "CSI: Crime Scene Investigation - Hard Evidence",
+        "Year": "2007",
+        "imdbID": "tt0934397",
+        "type": "game",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZTQ1NzI5ZTgtNWQ5Zi00NWQwLWIxODQtOTcwNDA0ZDEzNjllXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Alternative Lifestyle",
+        "Year": "2016–2019",
+        "imdbID": "tt6982604",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BY2Y3YzE3ZTEtNWZjOS00MmU2LTgxMGMtNmJhZjAxNmViMjZmXkEyXkFqcGdeQXVyMzc4Nzc2NDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Hitori Bocchi's OO Lifestyle",
+        "Year": "2019–",
+        "imdbID": "tt9828562",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2M4MDRmZjQtYzYzNi00ZjA0LWFhYzctY2MwOTllN2UxZjM5XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "A Perry Mason Mystery: The Case of the Lethal Lifestyle",
+        "Year": "1994",
+        "imdbID": "tt0110813",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2RmMjcwYjYtMGVkZi00ZDMyLWJiODUtNWM3MTU4YjAwNDQxXkEyXkFqcGdeQXVyNzMzMjU5NDY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Lifestyle",
+        "Year": "1999",
+        "imdbID": "tt0196699",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTQ0MDExODQzMV5BMl5BanBnXkFtZTcwNDMxNjUyMQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Worth It: Lifestyle",
+        "Year": "2016–",
+        "imdbID": "tt8223644",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZmFkYmJjNmUtZWRmNC00MDE2LThiMTktZjYxYzY3N2I3NTk0XkEyXkFqcGdeQXVyODQyNDI4ODg@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Lifestyle",
+        "Year": "2003–",
+        "imdbID": "tt1031819",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYjM2MzZmZDEtNzhhNy00NzI4LTk3NjMtZGMzZTc3NjQzZTJlXkEyXkFqcGdeQXVyOTM3MTA1NTk@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Lifestyle Classic",
+        "Year": "2018–",
+        "imdbID": "tt8140412",
+        "type": "series",
+        "posterUrl": "https://ia.media-imdb.com/images/M/MV5BMGJiODcyYzUtZDAxMi00MGM0LWIwZDAtZDU0MzM0MWIxNWViXkEyXkFqcGdeQXVyNjI1OTIxNjk@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Ayrton Senna Lifestyle in Brazil",
+        "Year": "1991",
+        "imdbID": "tt2385007",
+        "type": "Movie",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjc4NTVkOGMtNDVlYS00NDRlLThkODMtNmVlZjFjN2I1OTI1XkEyXkFqcGdeQXVyMzQ4NTE1MTg@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Lifestyle",
+        "Year": "2006",
+        "imdbID": "tt0861713",
+        "type": "Movie",
+        "posterUrl": "N/A"
+    },
+    {
+        "Title": "Lucia's Vegan Lifestyle",
+        "Year": "2020–",
+        "imdbID": "tt14017408",
+        "type": "series",
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BMWNjMDkyODItZThkMC00ZDE1LWI2NjItY2E5NTkzNjI4ZGNiXkEyXkFqcGdeQXVyMzYxNzU3Nw@@._V1_SX300.jpg"
     }
 ]

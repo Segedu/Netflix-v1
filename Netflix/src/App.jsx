@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import useFetch from './hooks/useFetch';
 import Home from './screens/Home/Home';
 import Logout from './components/LogOut/LogOut';
@@ -10,6 +10,7 @@ import Movies from './screens/Movies/Movies';
 import TvSeries from './screens/TvSeries/TvSeries';
 import Details from './screens/Details/Details';
 import './App.css';
+import axios from 'axios';
 
 function App() {
   const [auth, setAuth] = useState("");
@@ -17,6 +18,21 @@ function App() {
   const [watchList, setWatchList] = useState([]);
   const [movieDetails, setMovieDetails] = useState("");
   const [favoritesList, setFavoritesList] = useState([]);
+
+  // useEffect(getMovies, [])
+  // const API_K = "7c5dff80&";
+  // let url =`http://www.omdbapi.com/?s=lifestyle&apikey=7c5dff80`
+
+  // function getMovies() {
+  //   axios.get(url)
+  //     .then(response => {
+  //       console.log(response.data);
+  //       // setMovies(response.data);
+  //     }).catch(error => {
+  //       console.log(error)
+  //     });
+  // }
+
 
   return (
     <BrowserRouter>

@@ -13,13 +13,13 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails }) => {
 
     const Elements = data.map(display =>
         <section key={display.id}>
-            <h2>{display.title}</h2>
             <img onClick={() => {
                 showObjDetails(display.id, data, setMovieDetails, setIsRedirect)
             }} src={display.posterUrl} alt={display.title} />
             <article className="displayCont">
-                <h3>{display.year}</h3>
+                <h2>{display.title}</h2>
                 <p>{display.actors}</p>
+                <h3>{display.year}</h3>
                 <article className="buttonsCont">
                     <button className={style.button} onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
                     <button className={style.button} onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
