@@ -26,7 +26,7 @@ const TvSeries = ({ data, error, isLoading, watchList, setWatchList, setMovieDet
         </section>)
 
     return (
-        <div className="MainContainer">
+        <div className="cardsContainer">
             {isLoading ? <Spinner /> : tvSeriesElements}
             {error ? <p style={{ color: "red" }} > error</p> : ""}
             {isRedirect ? <Redirect to="/Details" /> : ""}

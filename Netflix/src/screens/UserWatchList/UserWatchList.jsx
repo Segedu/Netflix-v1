@@ -2,7 +2,7 @@ import { useState } from "react";
 import { removeFromList, addToList } from "../../utils/utils";
 import { HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp } from "react-icons/bs";
-import style from '../../App.css';
+// import style from '../../App.css';
 
 const UserWatchList = ({ data, watchList, setWatchList, favoritesList, setFavoritesList }) => {
 
@@ -36,12 +36,12 @@ const UserWatchList = ({ data, watchList, setWatchList, favoritesList, setFavori
 
 
     return (
-        <div className={style.MainContainer}>
-            <h1>Your Watch list</h1>
-            <div className={style.watchListCont}> {watchListElements}
+        <div className="cardsContainer">
+            <h1>Watch List</h1>
+            <div className="watchListCont"> {watchListElements}
             </div>
-            <h1>Your Favorites</h1>
-            <div className={style.favoritesCont}> {favoritesElements}
+            <h1>Favorites</h1>
+            <div className="favoritesCont"> {favoritesElements}
             </div>
         </div>)
 }

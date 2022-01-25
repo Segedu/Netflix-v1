@@ -10,7 +10,6 @@ import Movies from './screens/Movies/Movies';
 import TvSeries from './screens/TvSeries/TvSeries';
 import Details from './screens/Details/Details';
 import './App.css';
-import axios from 'axios';
 
 function App() {
   const [auth, setAuth] = useState("");
@@ -22,27 +21,29 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {auth ? (
-          <>
-            <Logout setAuth={setAuth} />
-            <Redirect to="UserWatchList" />
-            <Link to="/">Home</Link>
-            <Link to="/UserWatchList">My Watch List <p className='watchListCounter'>{watchList.length ? watchList.length : ""}</p></Link>
-            <Link to="/Movies">Movies</Link>
-            <Link to="/TvSeries">Tv Series</Link>
+        <nav>
+          {auth ? (
+            <>
+              <Logout setAuth={setAuth} />
+              <Redirect to="UserWatchList" />
+              <Link to="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6-cXZHF9zeyx0mlcYdXCGm9WJs4dDDZclA&usqp=CAU" alt="" /></Link>
+              <Link to="/UserWatchList">My Watch List <p className='watchListCounter'>{watchList.length ? watchList.length : ""}</p></Link>
+              <Link to="/Movies">Movies</Link>
+              <Link to="/TvSeries">Tv Series</Link>
 
-          </>
-        ) : <Redirect to="/" />}
-        {!auth ? (
-          <>
-            <Link to="/">Home</Link>
-            <Link to="/Movies">Movies</Link>
-            <Link to="/TvSeries">Tv Series</Link>
-            <Link to="/LogIn">Login</Link>
-            <Link to="/Register">Register</Link>
-            <Redirect to="/" />
-          </>
-        ) : <Redirect to="/" />}
+            </>
+          ) : <Redirect to="/" />}
+          {!auth ? (
+            <>
+              <Link to="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6-cXZHF9zeyx0mlcYdXCGm9WJs4dDDZclA&usqp=CAU" alt="" /></Link>
+              <Link to="/Movies">Movies</Link>
+              <Link to="/TvSeries">Tv Series</Link>
+              <Link to="/LogIn">Login</Link>
+              <Link to="/Register">Register</Link>
+              <Redirect to="/" />
+            </>
+          ) : <Redirect to="/" />}
+        </nav>
         <Switch>
           <Route exact path="/" component={() => <Home favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} data={data} watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Login" component={() => <Login setAuth={setAuth} />} />
