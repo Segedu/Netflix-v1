@@ -19,21 +19,6 @@ function App() {
   const [movieDetails, setMovieDetails] = useState("");
   const [favoritesList, setFavoritesList] = useState([]);
 
-  // useEffect(getMovies, [])
-  // const API_K = "7c5dff80&";
-  // let url =`http://www.omdbapi.com/?s=lifestyle&apikey=7c5dff80`
-
-  // function getMovies() {
-  //   axios.get(url)
-  //     .then(response => {
-  //       console.log(response.data);
-  //       // setMovies(response.data);
-  //     }).catch(error => {
-  //       console.log(error)
-  //     });
-  // }
-
-
   return (
     <BrowserRouter>
       <div className="App">
