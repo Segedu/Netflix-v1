@@ -25,6 +25,15 @@
   //todo: fiction- json, movies.js, mongo
   //todo: top rated- json, movies.js, mongo
 
+//!suggestions -home page
+     // const searchResultArr = searchTerm ? suggestions.map((suggestion, i) =>
+    //     <section key={i} className="searchResultCont"
+    //         onClick={() => suggestionHandler(suggestion.title)}><article>
+    //             <h4>{suggestion.title}</h4>
+    //             <img src={suggestion.posterUrl} />
+    //         </article></section>) : "";
+
+
   // useEffect(getData, [options.url]);
 
   // function getData() {

@@ -44,7 +44,7 @@ function App() {
           </>
         ) : <Redirect to="/" />}
         <Switch>
-          <Route exact path="/" component={() => <Home setMovieDetails={setMovieDetails} data={data} watchList={watchList} setWatchList={setWatchList} />} />
+          <Route exact path="/" component={() => <Home favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} data={data} watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Login" component={() => <Login setAuth={setAuth} />} />
           <Route exact path="/Register" component={() => <Register setAuth={setAuth} />} />
           <Route exact path="/Movies" component={() => <Movies favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />

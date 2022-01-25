@@ -1,15 +1,32 @@
 import { useState } from "react";
-import { addToList, removeFromList, searchData, showObjDetails } from '../../utils/utils';
+import { addToList, removeFromList, showObjDetails } from '../../utils/utils';
 import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp } from "react-icons/bs";
+import { Redirect } from "react-router-dom";
+import { API_KEY_MOVIES } from "../../../logic/key";
 import styles from './Home.module.css';
 import style from '../../App.css';
-import { Redirect } from "react-router-dom";
+import axios from "axios";
 
-const Home = ({ data, watchList, setWatchList, setMovieDetails }) => {
+
+const Home = ({ data, watchList, setWatchList, setMovieDetails, favoritesList, setFavoritesList }) => {
+    const [searchResults, setSearchResults] = useState([])
+    const [isRedirect, setIsRedirect] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
     const [suggestions, setSuggestions] = useState("");
-    const [isRedirect, setIsRedirect] = useState(false);
+
+    function getMovies(searchTerm) {
+        const url = `http://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY_MOVIES}`;
+        axios.get(url)
+            .then(response => {
+                console.log(response.data);
+                if (response.data.Search) {
+                    setSearchResults(response.data.Search);
+                }
+            }).catch(error => {
+                console.log(error.Error);
+            });
+    }
 
     const Elements = data.map(display =>
         <section key={display.id}>
@@ -23,36 +40,33 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails }) => {
                 <article className="buttonsCont">
                     <button className={style.button} onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
                     <button className={style.button} onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
-                    <button className={style.button}><BsHandThumbsUp fontSize="xx-large" color="white" /></button>
+                    <button className={style.button} onClick={() => addToList(data, display.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
         </section>)
 
-    const suggestionHandler = (searchTerm) => {
-        setSearchTerm(searchTerm);
-        setSuggestions([]);
-    }
 
     const searchInputHandler = (searchTerm) => {
-        searchData(searchTerm, data, setSuggestions, setSearchTerm);
+        setSearchTerm(searchTerm);
     }
-
-    const searchResultArr = searchTerm ? suggestions.map((suggestion, i) =>
-        <section key={i} className="searchResultCont"
-            onClick={() => suggestionHandler(suggestion.title)}><article>
-                <h4>{suggestion.title}</h4>
-                <img src={suggestion.posterUrl} />
-            </article></section>) : "";
+    const searchResultsElements = searchResults.map((movie) =>
+        <section key={movie.imdbID}>
+            <img src={movie.Poster} />
+            <h4>{movie.Title}</h4>
+            <button onClick={() => addToList(data, movie.id, watchList, setWatchList, "watchList")}> <HiOutlinePlusCircle title="Add to watch list" fontSize="xx-large" color="white" /></button>
+            <button onClick={() => removeFromList(movie.id, watchList, setWatchList, "watchList")}> <HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+            <button onClick={() => addToList(data, movie.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
+        </section>
+    )
 
     return (
         <div className="MainContainer">
-            <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className={styles.searchInput} type="text" inputMode="search" placeholder="Type movie/Tv series..." />
-            <button onClick={() => searchData(searchTerm, data, setSuggestions, setSearchTerm)} className={styles.searchBtn}>Search</button>
+            <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className={styles.searchInput} type="text" inputMode="search" placeholder="Type movie / Tv series..." />
+            <button onClick={() => getMovies(searchTerm)} className={styles.searchBtn}>Search</button>
             {/* <div className="HomePageTrailer"></div> */}
-            <div>{searchTerm ? searchResultArr : ""}</div>
-            {Elements}
+            <div className="searchResultCont" >{searchTerm ? searchResultsElements : Elements}</div>
             {isRedirect ? <Redirect to="/Details" /> : ""}
-        </div>)
+        </div >)
 }
 
 export default Home;

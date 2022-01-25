@@ -34,3 +34,12 @@ export function searchData(input, dataArray, setArray, setInput) {
         setInput(input)
     }
 }
+
+export const suggestionHandler = (searchTerm) => {
+    setSearchTerm(searchTerm);
+    setSuggestions([]);
+}
+
+//! additional data
+// searchData(searchTerm, data, setSuggestions, setSearchTerm); //!searchInputHandler function
+{/* <button onClick={() => searchData(searchTerm, data, setSuggestions, setSearchTerm)} className={styles.searchBtn}>Search</button> */ }//!ui search btn
