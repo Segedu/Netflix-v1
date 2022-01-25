@@ -13,10 +13,10 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails }) => {
 
     const Elements = data.map(display =>
         <section key={display.id}>
-            <img onClick={() => {
+            <img src={display.posterUrl} alt={display.title} />
+            <article className="displayCont" onClick={() => {
                 showObjDetails(display.id, data, setMovieDetails, setIsRedirect)
-            }} src={display.posterUrl} alt={display.title} />
-            <article className="displayCont">
+            }}>
                 <h2>{display.title}</h2>
                 <p>{display.actors}</p>
                 <h3>{display.year}</h3>

@@ -10,18 +10,16 @@ const TvSeries = ({ data, error, isLoading, watchList, setWatchList, setMovieDet
 
     const tvSeriesElements = data.filter(TvSeriesType => TvSeriesType.type == "series").map(tvSeries =>
         <section key={tvSeries.id}>
-            <img src={tvSeries.posterUrl} alt={tvSeries.title} onClick={() => {
+            <img src={tvSeries.posterUrl} alt={tvSeries.title} />
+            <article className="displayCont" onClick={() => {
                 showObjDetails(tvSeries.id, data, setMovieDetails, setIsRedirect);
-            }} />
-            <article className="displayCont">
+            }}>
                 <h2>{tvSeries.title}</h2>
                 <p>{tvSeries.actors}</p>
                 <h3>{tvSeries.year}</h3>
                 <article className="buttonsCont">
-                    <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}>
-                        <HiOutlinePlusCircle title="Add to watch list" fontSize="xx-large" color="white" /></button>
-                    <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}>
-                        <HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}> <HiOutlinePlusCircle title="Add to watch list" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}> <HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, tvSeries.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
                 </article>
             </article>

@@ -10,10 +10,10 @@ const Movies = ({ data, error, isLoading, watchList, setWatchList, setMovieDetai
 
     const moviesElements = data.filter(movieType => movieType.type == "Movie").map(movie =>
         <section key={movie.id}>
-            <img src={movie.posterUrl} alt={movie.title} onClick={() => {
+            <img src={movie.posterUrl} alt={movie.title} />
+            <article className="displayCont" onClick={() => {
                 showObjDetails(movie.id, data, setMovieDetails, setIsRedirect);
-            }} />
-            <article className="displayCont">
+            }}>
                 <h2>{movie.title}</h2>
                 <p>{movie.actors}</p>
                 <h3>{movie.year}</h3>
