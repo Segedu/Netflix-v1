@@ -7,17 +7,16 @@
     margin: 4rem;
 
 }
-img{
+.Details img{
     display: flex;
     margin: 2rem;
     width: 20rem;
-    height: 25rem;
 }
 .DetailsDisplay{
     display: flex;
     justify-content: space-evenly;
     width: 14rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
     align-items: flex-start;
 }
@@ -26,6 +25,6 @@ img{
     border: none;
     background-color: transparent;
 }
-.DetailsDisplay h2{
+.DetailsDisplay h2, h3,p{
     width: 100%;
 }

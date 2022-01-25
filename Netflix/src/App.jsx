@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
+import { useState } from 'react';
 import useFetch from './hooks/useFetch';
 import Home from './screens/Home/Home';
 import Logout from './components/LogOut/LogOut';
@@ -24,18 +24,20 @@ function App() {
           <>
             <Logout setAuth={setAuth} />
             <Redirect to="UserWatchList" />
-            <Link to="/UserWatchList">My Watch List</Link>
+            <Link to="/">Home</Link>
+            <Link to="/UserWatchList">My Watch List <p className='watchListCounter'>{watchList.length ? watchList.length : ""}</p></Link>
             <Link to="/Movies">Movies</Link>
             <Link to="/TvSeries">Tv Series</Link>
+
           </>
         ) : <Redirect to="/" />}
         {!auth ? (
           <>
             <Link to="/">Home</Link>
-            <Link to="/LogIn">Login</Link>
-            <Link to="/Register">Register</Link>
             <Link to="/Movies">Movies</Link>
             <Link to="/TvSeries">Tv Series</Link>
+            <Link to="/LogIn">Login</Link>
+            <Link to="/Register">Register</Link>
             <Redirect to="/" />
           </>
         ) : <Redirect to="/" />}
@@ -45,8 +47,8 @@ function App() {
           <Route exact path="/Register" component={() => <Register setAuth={setAuth} />} />
           <Route exact path="/Movies" component={() => <Movies setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
           <Route exact path="/TvSeries" component={() => <TvSeries setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
-          <Route exact path="/UserWatchList" component={() => <UserWatchList watchList={watchList} setWatchList={setWatchList} />} />
-          <Route exact path="/Details" component={() => <Details movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
+          <Route exact path="/UserWatchList" component={() => <UserWatchList data={data} watchList={watchList} setWatchList={setWatchList} />} />
+          <Route exact path="/Details" component={() => <Details data={data} watchList={watchList} setWatchList={setWatchList} movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
         </Switch>
       </div>
     </BrowserRouter >

@@ -6,11 +6,20 @@
 
 }
 .App a{
-  text-decoration: none;
+    text-decoration: none;
     font-size: larger;
     padding: 1rem;
     color: white;
     font-weight: bold;
+}
+a .watchListCounter{
+  position: absolute;
+  border: white;
+  border-radius: 50%;
+  background-color: red;
+  width: 1rem;
+  display: inline;
+  margin: 0.1rem;
 }
 
 .MainContainer{
@@ -20,18 +29,37 @@
   align-items: flex-start;
   margin: 1rem;
 }
+.MainContainer h1{
+  display: flex;
+  align-items: flex-end;
+  color: rgb(180, 0, 0);
+    margin: 1rem;
 
+}
 section{
   position: relative;
   width: 12rem;
-  margin: 0.8rem;
+  padding: 0.8rem;
   white-space: normal;
+}
+section img{
+  position: relative;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+ 
+}
+section h2{
+  position: absolute;
+  z-index: 1;
+  margin-left: 1rem;
 }
 
 .displayCont{
     width: 100%;
     height: 100%;
-    display: none;
+    /* display: none; */
 }
 
 .displayCont h2{
@@ -39,49 +67,50 @@ section{
   margin-left: 4rem;
   z-index: 1;
 }
-h3{
+.displayCont h3{
   position: absolute;
-  margin-left: 7rem;
   z-index: 1;
   top: 5rem; 
 }
 .displayCont p{
   position: absolute;
   font-weight: bold;
-  top: 11rem;
-  left: 1rem;
-  z-index: 1;  
+  top: 12rem;
+  left: 0rem;
 }
 .buttonsCont{
-  position: absolute;
   display: flex;
-  margin-left: 4rem;
-  margin-top: -3rem;
+  position: absolute;
+  margin-left: 2rem;
+  margin-top: -5rem;
 }
 .buttonsCont button{
   background-color: transparent;
   border: none;
   margin-top: 0.4rem;
 }
-section img{
-  position: relative;
-  border-radius: 0.5rem;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-}
 
-video{
-  align-items: center;
-  width: 100%;
-}
 .LogOutBtn{
   background-color: rgb(180, 0, 0);
   padding: 1rem;
   font-size: larger;
   color: white;
   border-radius: 0.5rem;
-  
     display: inline;
     float: left;
+}
+
+.favoritesCont {
+  display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.watchListCont{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
