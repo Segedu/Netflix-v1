@@ -1,10 +1,13 @@
 import { useState } from "react";
-import { removeFromList, addToList } from "../../utils/utils";
+import { removeFromList, addToList, playVideo } from "../../utils/utils";
 import { HiOutlineMinusCircle } from "react-icons/hi";
-import { BsHandThumbsUp } from "react-icons/bs";
+import { BsHandThumbsUp, BsPlayCircle } from "react-icons/bs";
+import { Redirect } from "react-router-dom";
+
 // import style from '../../App.css';
 
-const UserWatchList = ({ data, watchList, setWatchList, favoritesList, setFavoritesList }) => {
+const UserWatchList = ({ data, watchList, setWatchList, setMovieToPlay, favoritesList, setFavoritesList }) => {
+    const [isRedirectToVideoPlayer, setIsRedirectToVideoPlayer] = useState(false);
 
     const watchListElements = watchList.map(watchListObj =>
         <section key={watchListObj.id}>
@@ -14,8 +17,9 @@ const UserWatchList = ({ data, watchList, setWatchList, favoritesList, setFavori
                 <p>{watchListObj.actors}</p>
                 <h3>{watchListObj.year}</h3>
                 <article className="buttonsCont">
-                    <button onClick={() => removeFromList(watchListObj.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => playVideo(watchListObj.video, setMovieToPlay, data, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, watchListObj.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => removeFromList(watchListObj.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
         </section>)
@@ -43,6 +47,7 @@ const UserWatchList = ({ data, watchList, setWatchList, favoritesList, setFavori
             <h1>Favorites</h1>
             <div className="favoritesCont"> {favoritesElements}
             </div>
+            {isRedirectToVideoPlayer ? <Redirect to="/VideoPlayer" /> : ""}
         </div>)
 }
 

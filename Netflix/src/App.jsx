@@ -46,12 +46,12 @@ function App() {
           ) : <Redirect to="/" />}
         </nav>
         <Switch>
-          <Route exact path="/" component={() => <Home favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} data={data} watchList={watchList} setWatchList={setWatchList} />} />
+          <Route exact path="/" component={() => <Home setMovieToPlay={setMovieToPlay} favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} data={data} watchList={watchList} setWatchList={setWatchList} />} />
           <Route exact path="/Login" component={() => <Login setAuth={setAuth} />} />
           <Route exact path="/Register" component={() => <Register setAuth={setAuth} />} />
-          <Route exact path="/Movies" component={() => <Movies favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
-          <Route exact path="/TvSeries" component={() => <TvSeries setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} data={data} error={error} isLoading={isLoading} />} />
-          <Route exact path="/UserWatchList" component={() => <UserWatchList data={data} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />} />
+          <Route exact path="/Movies" component={() => <Movies setMovieToPlay={setMovieToPlay} favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
+          <Route exact path="/TvSeries" component={() => <TvSeries setMovieToPlay={setMovieToPlay} setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} data={data} error={error} isLoading={isLoading} />} />
+          <Route exact path="/UserWatchList" component={() => <UserWatchList setMovieToPlay={setMovieToPlay} data={data} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />} />
           <Route exact path="/Details" component={() => <Details setMovieToPlay={setMovieToPlay} data={data} watchList={watchList} setWatchList={setWatchList} movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
           <Route exact path="/VideoPlayer" component={() => <VideoPlayer movieToPlay={movieToPlay} />} />
         </Switch>
