@@ -10,6 +10,7 @@ import Movies from './screens/Movies/Movies';
 import TvSeries from './screens/TvSeries/TvSeries';
 import Details from './screens/Details/Details';
 import VideoPlayer from './screens/VideoPlayer/VideoPlayer';
+import netflixLogo from './video/netflix.png.png'
 import './App.css';
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
             <>
               <Logout setAuth={setAuth} />
               <Redirect to="UserWatchList" />
-              <Link to="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6-cXZHF9zeyx0mlcYdXCGm9WJs4dDDZclA&usqp=CAU" alt="" /></Link>
+              <Link to="/"><img src={netflixLogo} alt="" /></Link>
               <Link to="/UserWatchList">My Watch List <p className='watchListCounter'>{watchList.length ? watchList.length : ""}</p></Link>
               <Link to="/Movies">Movies</Link>
               <Link to="/TvSeries">Tv Series</Link>
@@ -36,7 +37,7 @@ function App() {
           ) : <Redirect to="/" />}
           {!auth ? (
             <>
-              <Link to="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6-cXZHF9zeyx0mlcYdXCGm9WJs4dDDZclA&usqp=CAU" alt="" /></Link>
+              <Link to="/"><img src={netflixLogo} alt="" /></Link>
               <Link to="/Movies">Movies</Link>
               <Link to="/TvSeries">Tv Series</Link>
               <Link to="/LogIn">Login</Link>
