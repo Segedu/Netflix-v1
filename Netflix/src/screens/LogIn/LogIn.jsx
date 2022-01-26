@@ -37,10 +37,10 @@ const LogIn = ({ setAuth }) => {
                 e.preventDefault(),
                     login()
             }} >
-                <h1>LogIn</h1>
+                <h1>Login</h1>
                 <input className={styles.input} type="email" placeholder="Enter Your Email" onChange={(e) => { setEmail(e.target.value) }} /><br></br>
                 <input className={styles.input} type="password" placeholder="Enter Your Password" onChange={(e) => { setPassword(e.target.value) }} /><br></br>
-                <input className={styles.button} type="submit" value="Log-In" />
+                <input className={styles.button} type="submit" value="Login" />
             </form>
             <h3>{errorFromServer ? "Error from server during Login" : ""}</h3>
         </div >)
