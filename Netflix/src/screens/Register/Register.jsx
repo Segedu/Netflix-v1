@@ -50,7 +50,7 @@ const Register = ({ setAuth }) => {
                     alert("incorrect password")
                 }
             }}>
-                <h1>Register Here</h1>
+                <h1>Register</h1>
                 <input type="email" onChange={(e) => { emailValidation(e) }} placeholder="Enter Email" /><br></br>
                 <input type="password" onChange={(e) => { passwordValidation(e, setPassword) }} placeholder="Enter Password" /><br></br>
                 <input type="password" onChange={(e) => { passwordValidation(e, setConfirmPassword) }} placeholder="Confirm Password" />
