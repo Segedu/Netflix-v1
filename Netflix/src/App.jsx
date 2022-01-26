@@ -9,6 +9,7 @@ import UserWatchList from './screens/UserWatchList/UserWatchList';
 import Movies from './screens/Movies/Movies';
 import TvSeries from './screens/TvSeries/TvSeries';
 import Details from './screens/Details/Details';
+import VideoPlayer from './screens/VideoPlayer/VideoPlayer';
 import './App.css';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   const [watchList, setWatchList] = useState([]);
   const [movieDetails, setMovieDetails] = useState("");
   const [favoritesList, setFavoritesList] = useState([]);
-
+  const [movieToPlay, setMovieToPlay] = useState("");
   return (
     <BrowserRouter>
       <div className="App">
@@ -51,7 +52,8 @@ function App() {
           <Route exact path="/Movies" component={() => <Movies favoritesList={favoritesList} setFavoritesList={setFavoritesList} setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} data={data} error={error} isLoading={isLoading} />} />
           <Route exact path="/TvSeries" component={() => <TvSeries setMovieDetails={setMovieDetails} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} data={data} error={error} isLoading={isLoading} />} />
           <Route exact path="/UserWatchList" component={() => <UserWatchList data={data} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />} />
-          <Route exact path="/Details" component={() => <Details data={data} watchList={watchList} setWatchList={setWatchList} movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
+          <Route exact path="/Details" component={() => <Details setMovieToPlay={setMovieToPlay} data={data} watchList={watchList} setWatchList={setWatchList} movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
+          <Route exact path="/VideoPlayer" component={() => <VideoPlayer movieToPlay={movieToPlay} />} />
         </Switch>
       </div>
     </BrowserRouter >

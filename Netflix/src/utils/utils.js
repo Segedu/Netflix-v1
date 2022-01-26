@@ -35,6 +35,11 @@ export function searchData(input, dataArray, setArray, setInput) {
     }
 }
 
+export function playVideo(videoUrl, setClickedObj, dataArray, setRedirect) {
+    const foundObj = dataArray.find(obj => obj.video === videoUrl);
+    setClickedObj(foundObj);
+    setRedirect(true);
+}
 export const suggestionHandler = (searchTerm) => {
     setSearchTerm(searchTerm);
     setSuggestions([]);
