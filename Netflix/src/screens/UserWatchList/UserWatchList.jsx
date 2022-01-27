@@ -4,8 +4,6 @@ import { HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp, BsPlayCircle } from "react-icons/bs";
 import { Redirect } from "react-router-dom";
 
-// import style from '../../App.css';
-
 const UserWatchList = ({ data, watchList, setWatchList, setMovieToPlay, favoritesList, setFavoritesList }) => {
     const [isRedirectToVideoPlayer, setIsRedirectToVideoPlayer] = useState(false);
 
@@ -17,7 +15,7 @@ const UserWatchList = ({ data, watchList, setWatchList, setMovieToPlay, favorite
                 <p>{watchListObj.actors}</p>
                 <h3>{watchListObj.year}</h3>
                 <article className="buttonsCont">
-                    <button onClick={() => playVideo(watchListObj.video, setMovieToPlay, data, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => playVideo(data, watchListObj.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, watchListObj.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => removeFromList(watchListObj.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
                 </article>
@@ -37,7 +35,6 @@ const UserWatchList = ({ data, watchList, setWatchList, setMovieToPlay, favorite
                 </article>
             </article>
         </section>)
-
 
     return (
         <div className="cardsContainer">

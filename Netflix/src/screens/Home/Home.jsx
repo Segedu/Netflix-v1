@@ -5,9 +5,7 @@ import { BsHandThumbsUp, BsPlayCircle } from "react-icons/bs";
 import { Redirect } from "react-router-dom";
 import { API_KEY_MOVIES } from "../../../logic/key";
 import styles from './Home.module.css';
-import style from '../../App.css';
 import axios from "axios";
-
 
 const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, favoritesList, setFavoritesList }) => {
     const [searchResults, setSearchResults] = useState([])
@@ -72,7 +70,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
             <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className={styles.searchInput} type="text" inputMode="search" placeholder="Type movie / Tv series..." autoComplete="true" />
             <button onClick={() => getMovies(searchTerm)} className={styles.searchBtn}>Search</button>
             <div className="HomePageTrailer">
-                <iframe width="1366" height="625" src="https://www.youtube-nocookie.com/embed/GV3HUDMQ-F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="1366" height="625" src="https://www.youtube-nocookie.com/embed/GV3HUDMQ-F8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <div className="searchResultCont" >{searchTerm ? searchResultsElements : Elements}</div>
             {isRedirect ? <Redirect to="/Details" /> : ""}

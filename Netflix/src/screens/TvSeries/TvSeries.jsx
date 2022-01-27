@@ -1,39 +1,22 @@
 import Spinner from "../../components/Spinner/Spinner";
 import { useState } from "react";
-import { addToList, removeFromList, showObjDetails, playVideo } from '../../utils/utils';
-import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
-import { BsHandThumbsUp, BsPlayCircle } from "react-icons/bs";
+import { showObjDetails, mainCardsDisplay } from '../../utils/utils';
 import { Redirect } from "react-router-dom";
 
 const TvSeries = ({ data, error, isLoading, watchList, setWatchList, setMovieDetails, setMovieToPlay, favoritesList, setFavoritesList }) => {
     const [isRedirect, setIsRedirect] = useState(false);
     const [isRedirectToVideoPlayer, setIsRedirectToVideoPlayer] = useState(false);
 
-    const tvSeriesElements = data.filter(TvSeriesType => TvSeriesType.type == "series").map(tvSeries =>
-        <section key={tvSeries.id}>
-            <img src={tvSeries.posterUrl} alt={tvSeries.title} />
-            <article className="displayCont" onClick={() => {
-                showObjDetails(tvSeries.id, data, setMovieDetails, setIsRedirect);
-            }}>
-                <h2>{tvSeries.title}</h2>
-                <p>{tvSeries.actors}</p>
-                <h3>{tvSeries.year}</h3>
-                <article className="buttonsCont">
-                    <button onClick={() => playVideo(tvSeries.video, setMovieToPlay, data, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
-                    <button onClick={() => addToList(data, tvSeries.id, watchList, setWatchList, "watchList")}> <HiOutlinePlusCircle title="Add to watch list" fontSize="xx-large" color="white" /></button>
-                    <button onClick={() => removeFromList(tvSeries.id, watchList, setWatchList, "watchList")}> <HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
-                    <button onClick={() => addToList(data, tvSeries.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
-                </article>
-            </article>
-        </section>)
+    const elements = mainCardsDisplay("series", data, showObjDetails, setMovieDetails, setIsRedirect, watchList, setWatchList, favoritesList, setFavoritesList, setMovieToPlay, setIsRedirectToVideoPlayer);
 
     return (
         <div className="cardsContainer">
-            {isLoading ? <Spinner /> : tvSeriesElements}
+            {isLoading ? <Spinner /> : elements}
             {error ? <p style={{ color: "red" }} > error</p> : ""}
             {isRedirect ? <Redirect to="/Details" /> : ""}
             {isRedirectToVideoPlayer ? <Redirect to="/VideoPlayer" /> : ""}
-        </div>)
+        </div>
+    )
 }
 
 export default TvSeries;
