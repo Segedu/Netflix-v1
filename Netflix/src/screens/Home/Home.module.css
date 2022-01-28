@@ -13,3 +13,20 @@
     border-radius: 0.5rem;
     margin-top: 1.5rem;
 }
+
+
+@media (max-width:340px){
+  .searchInput{
+    width: 10rem;
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+  .HomePageTrailer iframe{
+    position: relative;
+    width: 82vw;
+  }
+  .searchBtn{
+    font-size: small;
+    margin-top: 2rem;
+  }
+}

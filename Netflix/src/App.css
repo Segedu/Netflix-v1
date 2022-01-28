@@ -1,5 +1,7 @@
+/* //max-height, rem,  */
 .App {
   background-color: black;
+  /* background-color: white; */
   color: white;
   text-align: center;
   height: 100%;
@@ -19,8 +21,8 @@
 }
 .App nav{
  display: block;
+ position: fixed;
     width: 100%;
-    position: fixed;
     z-index: 1;
 }
 .App a img{
@@ -45,7 +47,8 @@ a .watchListCounter{
   padding: 3rem;
 }
 .MainContainer{
-  padding: 3rem;
+  /* width: 100%; */
+  /* padding: 3rem; */
 } 
 
 .cardsContainer h1{
@@ -123,7 +126,7 @@ section img{
   color: white;
   font-size: large;
   display: inline;
-  float: right;
+  /* float: right; */
 }
 
 .favoritesCont, .watchListCont {
@@ -140,4 +143,31 @@ section img{
   align-content: stretch;
   justify-content: center;
   align-items: flex-start;
+}
+
+@media (max-width:340px) {
+  .App nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .MainContainer{
+
+    padding: 0;
+  } 
+  .App nav a{
+    padding: 0.3rem;
+    font-size: small;
+  }
+ .App nav a img{
+  width: 3.5rem;
+  margin-top: -0.3rem;
+
+  }
+  .LogOutBtn{
+    padding: 0.3rem;
+    font-size: small;
+  }
+
 }
