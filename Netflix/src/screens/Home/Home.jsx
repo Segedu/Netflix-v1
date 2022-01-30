@@ -29,13 +29,13 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
 
     const Elements = data.map(display =>
         <section key={display.id}>
-            <img src={display.posterUrl} alt={display.title} />
-            <article className="displayCont" onClick={() => {
+            <img src={display.posterUrl} alt={display.title} onClick={() => {
                 showObjDetails(display.id, data, setMovieDetails, setIsRedirect)
-            }}>
-                <h2>{display.title}</h2>
+            }} />
+            <article className="displayCont">
+                <h4>{display.title}</h4>
                 <p>{display.actors}</p>
-                <h3>{display.year}</h3>
+                <h4>{display.year}</h4>
                 <article className="buttonsCont">
                     <button onClick={() => playVideo(display.video, setMovieToPlay, data, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
@@ -66,13 +66,13 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
     )
 
     return (
-        <div className="MainContainer">
+        <div className="cardsContainer">
             <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className={styles.searchInput} type="text" inputMode="search" placeholder="Type movie / Tv series..." autoComplete="true" />
             <button onClick={() => getMovies(searchTerm)} className={styles.searchBtn}>Search</button>
             <div className="HomePageTrailer">
                 <iframe width="1366" height="625" src="https://www.youtube-nocookie.com/embed/GV3HUDMQ-F8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
-            <div className="searchResultCont" >{searchTerm ? searchResultsElements : Elements}</div>
+            <div className="cards" >{searchTerm ? searchResultsElements : Elements}</div>
             {isRedirect ? <Redirect to="/Details" /> : ""}
             {isRedirectToVideoPlayer ? <Redirect to="/VideoPlayer" /> : ""}
         </div >)

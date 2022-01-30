@@ -11,9 +11,9 @@ const UserWatchList = ({ data, watchList, setWatchList, setMovieToPlay, favorite
         <section key={watchListObj.id}>
             <img src={watchListObj.posterUrl} alt={watchListObj.title} />
             <article className="displayCont">
-                <h2>{watchListObj.title}</h2>
+                <h4>{watchListObj.title}</h4>
                 <p>{watchListObj.actors}</p>
-                <h3>{watchListObj.year}</h3>
+                <h4>{watchListObj.year}</h4>
                 <article className="buttonsCont">
                     <button onClick={() => playVideo(data, watchListObj.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, watchListObj.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
@@ -26,9 +26,9 @@ const UserWatchList = ({ data, watchList, setWatchList, setMovieToPlay, favorite
         <section key={likedItem.id}>
             <img src={likedItem.posterUrl} alt={likedItem.title} />
             <article className="displayCont">
-                <h2>{likedItem.title}</h2>
-                <p>{likedItem.year}</p>
+                <h4>{likedItem.title}</h4>
                 <p>{likedItem.actors}</p>
+                <p>{likedItem.year}</p>
                 <article className="buttonsCont">
                     <button onClick={() => addToList(data, likedItem.id, watchList, setWatchList, "watchList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => removeFromList(likedItem.id, favoritesList, setFavoritesList, "favoritesList")}><HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
@@ -39,10 +39,10 @@ const UserWatchList = ({ data, watchList, setWatchList, setMovieToPlay, favorite
     return (
         <div className="cardsContainer">
             <h1>Watch List</h1>
-            <div className="watchListCont"> {watchListElements}
+            <div className="watchListCards"> {watchListElements}
             </div>
             <h1>Favorites</h1>
-            <div className="favoritesCont"> {favoritesElements}
+            <div className="favoritesCards"> {favoritesElements}
             </div>
             {isRedirectToVideoPlayer ? <Redirect to="/VideoPlayer" /> : ""}
         </div>)
