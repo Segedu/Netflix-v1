@@ -1,7 +1,11 @@
 /* //max-height, rem,  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   background-color: black;
-  /* background-color: white; */
   color: white;
   text-align: center;
   height: 100%;
@@ -59,7 +63,13 @@ a .watchListCounter{
   margin: 1rem;
   width: 100%;
 } 
-
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  /* overflow: scroll; */
+}
 section{
   position: relative;
   transition:transform 0.2s;
@@ -70,11 +80,11 @@ section{
 
 section:hover{
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.3);
   z-index: 1;
 }
 
-section:hover .displayCont{
+section:hover .details{
   opacity: 1;
 }
 
@@ -86,7 +96,7 @@ section img{
     opacity: 1;
 }
 
-.displayCont{
+.details{
   display: flex;
   position: absolute;
   text-align: center;
@@ -102,15 +112,15 @@ section img{
   opacity: 0;
 }
 
-.displayCont h2{
+.details h2{
     margin-left: 1.5rem;
     margin: 0;
 }
-.displayCont h4{
+.details h4{
   margin: 0;
 
 }
-.displayCont p{
+.details p{
     top: 0rem;
     left: 0rem;
     margin: 0;
@@ -140,12 +150,7 @@ section img{
   align-content: center;
 }
 
-.cards{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-content: center;
-}
+
 
 @media (max-width:340px) {
   .App nav{

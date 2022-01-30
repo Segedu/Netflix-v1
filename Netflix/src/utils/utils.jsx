@@ -5,7 +5,7 @@ export function mainCardsDisplay(cardsCategory, data, showObjDetails, setMovieDe
     const elements = data.filter(movieType => movieType.type == cardsCategory).map(movie =>
         <section key={movie.id}>
             <img src={movie.posterUrl} alt={movie.title} />
-            <article className="displayCont" onClick={() => {
+            <article className="details" onClick={() => {
                 showObjDetails(movie.id, data, setMovieDetails, setIsRedirect);
             }}>
                 <h2>{movie.title}</h2>

@@ -32,7 +32,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
             <img src={display.posterUrl} alt={display.title} onClick={() => {
                 showObjDetails(display.id, data, setMovieDetails, setIsRedirect)
             }} />
-            <article className="displayCont">
+            <article className="details">
                 <h4>{display.title}</h4>
                 {/* <p>{display.actors}</p> */}
                 <h4>{display.year}</h4>
@@ -54,7 +54,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
     const searchResultsElements = searchResults.map((movie) =>
         <section key={movie.imdbID}>
             <img src={movie.Poster} />
-            <article className="displayCont">
+            <article className="details">
                 <h4>{movie.Title}</h4>
                 <article className="buttonsCont">
                     <button onClick={() => playVideo(movie.video, setMovieToPlay, data, setIsRedirectToVideoPlayer)}><BsPlayCircle fontSize="xx-large" color="white" /></button>
@@ -69,7 +69,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
     const watchListElements = watchList.map(watchListObj =>
         <section key={watchListObj.id}>
             <img src={watchListObj.posterUrl} alt={watchListObj.title} />
-            <article className="displayCont">
+            <article className="details">
                 <h4>{watchListObj.title}</h4>
                 {/* <p>{watchListObj.actors}</p> */}
                 <h4>{watchListObj.year}</h4>
@@ -85,7 +85,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
     const favoritesElements = favoritesList.map(likedItem =>
         <section key={likedItem.id}>
             <img src={likedItem.posterUrl} alt={likedItem.title} />
-            <article className="displayCont">
+            <article className="details">
                 <h4>{likedItem.title}</h4>
                 {/* <p>{likedItem.actors}</p> */}
                 <p>{likedItem.year}</p>
@@ -96,7 +96,6 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
             </article>
         </section>
     )
-
 
     return (
         <div className="cardsContainer">
