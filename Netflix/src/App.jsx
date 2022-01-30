@@ -2,7 +2,7 @@ import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import useFetch from './hooks/useFetch';
 import Home from './screens/Home/Home';
-import Logout from './components/LogOut/LogOut';
+import Logout from './components/LogOut';
 import Login from './screens/LogIn/LogIn';
 import Register from './screens/Register/Register';
 import UserWatchList from './screens/UserWatchList/UserWatchList';
@@ -11,6 +11,7 @@ import TvSeries from './screens/TvSeries/TvSeries';
 import Details from './screens/Details/Details';
 import VideoPlayer from './screens/VideoPlayer/VideoPlayer';
 import netflixLogo from './video/netflix.png.png'
+import Chat from './components/Chat';
 import './App.css';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   const [movieDetails, setMovieDetails] = useState("");
   const [favoritesList, setFavoritesList] = useState([]);
   const [movieToPlay, setMovieToPlay] = useState("");
-  
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -31,16 +32,16 @@ function App() {
               <Link to="/"><img src={netflixLogo} alt="" /></Link>
               <Link to="/UserWatchList">My Watch List <p className='watchListCounter'>{watchList.length ? watchList.length : ""}</p></Link>
               <Link to="/Movies">Movies</Link>
-              <Link to="/TvSeries">Tv Series</Link>
+              <Link to="/TvSeries">TV Shows</Link>
+              <Link to="/Chat">Chat</Link>
               <Logout setAuth={setAuth} />
-
             </>
           ) : <Redirect to="/" />}
           {!auth ? (
             <>
               <Link to="/"><img src={netflixLogo} alt="" /></Link>
               <Link to="/Movies">Movies</Link>
-              <Link to="/TvSeries">Tv Series</Link>
+              <Link to="/TvSeries">TV Shows</Link>
               <Link to="/LogIn">Login</Link>
               <Link to="/Register">Register</Link>
               <Redirect to="/" />
@@ -56,6 +57,7 @@ function App() {
           <Route exact path="/UserWatchList" component={() => <UserWatchList setMovieToPlay={setMovieToPlay} data={data} watchList={watchList} setWatchList={setWatchList} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />} />
           <Route exact path="/Details" component={() => <Details setMovieToPlay={setMovieToPlay} data={data} watchList={watchList} setWatchList={setWatchList} movieDetails={movieDetails} setMovieDetails={setMovieDetails} />} />
           <Route exact path="/VideoPlayer" component={() => <VideoPlayer movieToPlay={movieToPlay} />} />
+          <Route exact path="/Chat" component={() => <Chat setAuth={setAuth} />} />
         </Switch>
       </div>
     </BrowserRouter >
