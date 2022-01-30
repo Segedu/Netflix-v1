@@ -11,7 +11,7 @@ const Movies = ({ data, error, isLoading, watchList, setWatchList, setMovieToPla
 
     return (
         <div className="cardsContainer">
-            {isLoading ? <Spinner /> : elements}
+            <div className="cards">{isLoading ? <Spinner /> : elements}</div>
             {error ? <p style={{ color: "red" }} > error</p> : ""}
             {isRedirect ? <Redirect to="/Details" /> : ""}
             {isRedirectToVideoPlayer ? <Redirect to="/VideoPlayer" /> : ""}

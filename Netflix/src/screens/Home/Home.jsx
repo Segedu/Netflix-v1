@@ -24,7 +24,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
                 }
             }).catch(error => {
                 console.log(error);
-            });
+            })
     }
 
     const Elements = data.map(display =>
@@ -34,7 +34,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
             }} />
             <article className="displayCont">
                 <h4>{display.title}</h4>
-                <p>{display.actors}</p>
+                {/* <p>{display.actors}</p> */}
                 <h4>{display.year}</h4>
                 <article className="buttonsCont">
                     <button onClick={() => playVideo(display.video, setMovieToPlay, data, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
@@ -43,7 +43,8 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
                     <button onClick={() => addToList(data, display.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
                 </article>
             </article>
-        </section>)
+        </section>
+    )
 
 
     const searchInputHandler = (searchTerm) => {
@@ -65,17 +66,55 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
         </section>
     )
 
+    const watchListElements = watchList.map(watchListObj =>
+        <section key={watchListObj.id}>
+            <img src={watchListObj.posterUrl} alt={watchListObj.title} />
+            <article className="displayCont">
+                <h4>{watchListObj.title}</h4>
+                {/* <p>{watchListObj.actors}</p> */}
+                <h4>{watchListObj.year}</h4>
+                <article className="buttonsCont">
+                    <button onClick={() => playVideo(data, watchListObj.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => addToList(data, watchListObj.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => removeFromList(watchListObj.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+                </article>
+            </article>
+        </section>
+    )
+
+    const favoritesElements = favoritesList.map(likedItem =>
+        <section key={likedItem.id}>
+            <img src={likedItem.posterUrl} alt={likedItem.title} />
+            <article className="displayCont">
+                <h4>{likedItem.title}</h4>
+                {/* <p>{likedItem.actors}</p> */}
+                <p>{likedItem.year}</p>
+                <article className="buttonsCont">
+                    <button onClick={() => addToList(data, likedItem.id, watchList, setWatchList, "watchList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => removeFromList(likedItem.id, favoritesList, setFavoritesList, "favoritesList")}><HiOutlineMinusCircle title="Remove from watch list" fontSize="xx-large" color="white" /></button>
+                </article>
+            </article>
+        </section>
+    )
+
+
     return (
         <div className="cardsContainer">
-            <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className={styles.searchInput} type="text" inputMode="search" placeholder="Type movie / Tv series..." autoComplete="true" />
-            <button onClick={() => getMovies(searchTerm)} className={styles.searchBtn}>Search</button>
-            <div className="HomePageTrailer">
-                <iframe width="1366" height="625" src="https://www.youtube-nocookie.com/embed/GV3HUDMQ-F8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <div className="searchNav">
+                <input onChange={(e) => searchInputHandler(e.target.value)} value={searchTerm} className={styles.searchInput} type="text" inputMode="search" placeholder="Type movie / Tv series..." autoComplete="true" />
+                <button onClick={() => getMovies(searchTerm)} className={styles.searchBtn}>Search</button>
             </div>
+            <div className="HomePageTrailer"><iframe width="1366" height="625" src="https://www.youtube-nocookie.com/embed/GV3HUDMQ-F8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+            <h3>Movies & TV shows</h3>
             <div className="cards" >{searchTerm ? searchResultsElements : Elements}</div>
+            <h3>Your Watch List</h3>
+            <div className="watchListCards">{watchListElements}</div>
+            <h3>Your Favorites</h3>
+            <div className="favoritesCards"> {favoritesElements}</div>
             {isRedirect ? <Redirect to="/Details" /> : ""}
             {isRedirectToVideoPlayer ? <Redirect to="/VideoPlayer" /> : ""}
-        </div >)
+        </div >
+    )
 }
 
 export default Home;
