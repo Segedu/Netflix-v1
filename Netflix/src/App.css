@@ -48,8 +48,9 @@ a .watchListCounter{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
   margin-top: 4rem;
+  width: 100%;
 }
 .cardsContainer{
   display: flex;
@@ -73,8 +74,8 @@ a .watchListCounter{
 section{
   position: relative;
   transition:transform 0.2s;
-  height: 12rem;
-  width: 20rem;
+  height: 20rem;
+  width: 16rem;
   padding: 0.8rem;
 }
 
@@ -141,6 +142,7 @@ section img{
   color: white;
   font-size: large;
   display: inline;
+  float: right;
 }
 
 .favoritesCards, .watchListCards {

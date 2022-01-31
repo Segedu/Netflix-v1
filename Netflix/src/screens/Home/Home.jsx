@@ -37,7 +37,7 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
                 {/* <p>{display.actors}</p> */}
                 <h4>{display.year}</h4>
                 <article className="buttonsCont">
-                    <button onClick={() => playVideo(display.video, setMovieToPlay, data, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
+                    <button onClick={() => playVideo(data, display.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle fontSize="xx-large" color="white" /></button>
                     <button onClick={() => removeFromList(display.id, watchList, setWatchList, "watchList")}><HiOutlineMinusCircle fontSize="xx-large" color="white" /></button>
                     <button onClick={() => addToList(data, display.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" fontSize="xx-large" color="white" /></button>
