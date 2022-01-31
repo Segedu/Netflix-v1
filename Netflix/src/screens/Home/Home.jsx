@@ -34,7 +34,6 @@ const Home = ({ data, watchList, setWatchList, setMovieDetails, setMovieToPlay, 
             }} />
             <article className="details">
                 <h4>{display.title}</h4>
-                {/* <p>{display.actors}</p> */}
                 <h4>{display.year}</h4>
                 <article className="buttonsCont">
                     <button onClick={() => playVideo(data, display.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" fontSize="xx-large" color="white" /></button>
