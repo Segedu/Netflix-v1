@@ -1,5 +1,7 @@
 import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi";
 import { BsHandThumbsUp, BsPlayCircle } from "react-icons/bs";
+import { API_KEY_MOVIES } from '../../logic/key';
+import axios from "axios";
 
 export function mainCardsDisplay(cardsCategory, data, showObjDetails, setMovieDetails, setIsRedirect, watchList, setWatchList, favoritesList, setFavoritesList, setMovieToPlay, setIsRedirectToVideoPlayer) {
     const elements = data.filter(movieType => movieType.type == cardsCategory).map(movie =>
@@ -21,6 +23,22 @@ export function mainCardsDisplay(cardsCategory, data, showObjDetails, setMovieDe
         </section >
     )
     return elements;
+}
+
+export function getMovies(searchTerm, setSearchResults, API_KEY_MOVIES) {
+    const url = `http://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY_MOVIES}`;
+    axios.get(url)
+        .then(response => {
+            if (response.data.Search) {
+                setSearchResults(response.data.Search);
+            }
+        }).catch(error => {
+            console.log(error);
+        })
+}
+
+export const searchInputHandler = (searchTerm, setSearchTerm) => {
+    setSearchTerm(searchTerm);
 }
 
 export function addToList(dataArray, objId, category, setFunction, listKeyName) {

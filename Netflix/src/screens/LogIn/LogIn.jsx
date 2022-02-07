@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { API_KEY } from '../../../logic/key';
 import Spinner from '../../components/Spinner/Spinner'
-import styles from './LogIn.module.css';
+import style from './LogIn.module.css';
 import React from 'react';
 import firebase from 'firebase';
 import { auth } from '../../firebase';
@@ -34,25 +34,24 @@ const LogIn = ({ setAuth }) => {
                 localStorage.setItem(LOCAL_STORAGE_AUTH_KEY, JSON.stringify(response.data));
             })
             .catch(function (error) {
-                console.log(error)
                 setErrorFromServer(error)
             });
     }
 
     return (
-        <div className="Form">
-            <section>{loading ? <Spinner /> : ""}</section>
-            <form onSubmit={(e) => {
+        <div className={style.Form}>
+            <form className={style.signInAndUpForm} onSubmit={(e) => {
                 e.preventDefault(),
                     login()
             }} >
                 <h1>Login</h1>
-                <input className={styles.input} type="email" placeholder="Enter Your Email" onChange={(e) => { setEmail(e.target.value) }} /><br></br>
-                <input className={styles.input} type="password" placeholder="Enter Your Password" onChange={(e) => { setPassword(e.target.value) }} /><br></br>
-                <input className={styles.button} type="submit" value="Login" />
+                <input className={style.input} type="email" placeholder="Enter Your Email" onChange={(e) => { setEmail(e.target.value) }} /><br></br>
+                <input className={style.input} type="password" placeholder="Enter Your Password" onChange={(e) => { setPassword(e.target.value) }} /><br></br>
+                <input className={style.button} type="submit" value="Login" />
                 <button onClick={signInWithGoogle}>Sign-In with Google</button>
+                <section>{loading ? <Spinner /> : ""}</section>
+                <h3>{errorFromServer ? "Error from server during Login" : ""}</h3>
             </form>
-            <h3>{errorFromServer ? "Error from server during Login" : ""}</h3>
         </div >)
 }
 

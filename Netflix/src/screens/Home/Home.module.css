@@ -15,6 +15,106 @@
   height: 70vh;
 }
 
+.cardsRow {
+  padding: 10px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: white;
+}
+
+.cardsRow::-webkit-scrollbar{
+    display: none;
+}
+
+.cardsSection {
+  transition: transform 0.2s;
+  height: 24rem;
+  width: 26rem;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardsSection:hover{
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.cardsSection:hover .details{
+  opacity: 1;
+}
+
+.cardsSection img {
+  /* filter: drop-shadow(0 0 0.3rem rgb(255, 255, 255)); */
+  border-radius: 0.2rem;
+  width: 25rem;
+  height: 65%;
+  opacity: 1;
+  position: relative;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 0.5s ease-in-out;
+  width: 25.3rem;
+  height: 32%;
+  opacity: 0;
+  bottom: 0;
+  border-radius: 0.2rem;
+  align-content: space-around;
+  padding: 0.5rem;
+}
+
+.buttonsCont {
+  display: flex;
+  justify-content: flex-start;
+  }
+
+.buttonsCont button{
+  background-color: transparent;
+  border: none;
+}
+
+.icons{
+  cursor: pointer;
+  color: white;
+  font-size: xx-large;
+}
+.textDetailsCont{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textDetailsCont p {
+font-size: 16px;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.cardsContainer{
+  display: flex;
+ flex-direction: column;
+}
+.cardsContainer h1{
+  display: flex;
+  align-items: flex-end;
+ color:white;
+  margin-left: 3rem;
+  width: 100%;
+} 
+.favoritesCards, .watchListCards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+}
+
 @media (max-width:340px){
   .searchInput{
     width: 10rem;
