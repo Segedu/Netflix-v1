@@ -1,4 +1,4 @@
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "../../components/Spinner";
 import { useState } from "react";
 import { showObjDetails, mainCardsDisplay } from '../../utils/utils';
 import { Redirect } from "react-router-dom";

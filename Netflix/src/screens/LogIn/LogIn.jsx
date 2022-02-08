@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { API_KEY } from '../../../logic/key';
-import Spinner from '../../components/Spinner/Spinner'
+import Spinner from '../../components/Spinner'
 import style from './LogIn.module.css';
 import React from 'react';
 import firebase from 'firebase';

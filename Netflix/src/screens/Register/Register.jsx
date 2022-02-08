@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { API_KEY } from '../../../logic/key.js';
-import Spinner from "../../components/Spinner/Spinner.jsx";
+import Spinner from "../../components/Spinner";
 import style from '../LogIn/LogIn.module.css';
 import Alert from 'react-bootstrap/Alert';
 

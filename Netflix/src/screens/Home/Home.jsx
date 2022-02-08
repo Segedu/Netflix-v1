@@ -6,7 +6,6 @@ import { BsHandThumbsUp, BsPlayCircle } from "react-icons/bs";
 import { Redirect } from "react-router-dom";
 import { API_KEY_MOVIES } from '../../../logic/key';
 import style from './Home.module.css';
-// import style from './App.css';
 import axios from "axios";
 import MainBanner from "../../components/MainBanner";
 
@@ -22,10 +21,10 @@ const Home = ({ searchTerm, setSearchTerm, searchResults, setSearchResults, data
             <img src={display.posterUrl} alt={display.title} />
             <article className={style.details}>
                 <article className={style.buttonsCont}>
-                    <button onClick={() => playVideo(data, display.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" className={style.icons}/></button>
-                    <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle className={style.icons}/></button>
-                    <button onClick={() => addToList(data, display.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" className={style.icons}/></button>
-                    <button onClick={() => showObjDetails(data, display.id, setMovieDetails, setIsRedirect)}>< IoIosArrowDropdown title="Details" className={style.icons}/></button>
+                    <button onClick={() => playVideo(data, display.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" className={style.icons} /></button>
+                    <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle className={style.icons} /></button>
+                    <button onClick={() => addToList(data, display.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" className={style.icons} /></button>
+                    <button onClick={() => showObjDetails( display.id,data, setMovieDetails, setIsRedirect)}>< IoIosArrowDropdown title="Details" className={style.icons} /></button>
                 </article>
                 <article className={style.textDetailsCont}>
                     <p>{display.title}</p>
@@ -52,7 +51,7 @@ const Home = ({ searchTerm, setSearchTerm, searchResults, setSearchResults, data
     )
 
     const watchListElements = watchList.map(watchListObj =>
-        <section  className={style.cardsSection} key={watchListObj.id}>
+        <section className={style.cardsSection} key={watchListObj.id}>
             <img src={watchListObj.posterUrl} alt={watchListObj.title} />
             <article className={style.details}>
                 <h4>{watchListObj.title}</h4>
@@ -68,7 +67,7 @@ const Home = ({ searchTerm, setSearchTerm, searchResults, setSearchResults, data
     )
 
     const favoritesElements = favoritesList.map(likedItem =>
-        <section  className={style.cardsSection} key={likedItem.id}>
+        <section className={style.cardsSection} key={likedItem.id}>
             <img src={likedItem.posterUrl} alt={likedItem.title} />
             <article className={style.details}>
                 <h4>{likedItem.title}</h4>
@@ -86,8 +85,7 @@ const Home = ({ searchTerm, setSearchTerm, searchResults, setSearchResults, data
         <div className={style.cardsContainer}>
             <MainBanner />
             <h1>Movies & TV shows</h1>
-            <div className={style.cardsRow} >
-                {searchTerm ? searchResultsElements : Elements}</div>
+            <div className={style.cardsRow} >{searchTerm ? searchResultsElements : <section className={style.slider}>{Elements}</section>}</div>
             <h1>Your Watch List</h1>
             <div className={style.watchListCards}>{watchListElements}</div>
             <h1>Your Favorites</h1>
