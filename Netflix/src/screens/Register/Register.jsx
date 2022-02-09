@@ -3,7 +3,6 @@ import axios from "axios";
 import { API_KEY } from '../../../logic/key.js';
 import Spinner from "../../components/Spinner";
 import style from '../LogIn/LogIn.module.css';
-import Alert from 'react-bootstrap/Alert';
 
 const Register = ({ setAuth }) => {
     const [userEmail, setUserEmail] = useState("");
@@ -45,19 +44,10 @@ const Register = ({ setAuth }) => {
             <form className={style.signInAndUpForm} onSubmit={(e) => {
                 e.preventDefault();
                 if (password === confirmPassword) {
-                    register()
+                    register();
                 } else {
-                    [
-                        'secondary',
-                        'light',
-                        'dark',
-                    ].map((variant, idx) => (
-                        <Alert key={idx} variant={variant}>
-                            This is a {variant} alert—check it out!
-                        </Alert>
-                    ));
-
-                    alert("incorrect password")
+                    <Alert  variant="secondary">incorrect password </Alert>
+                    // alert("incorrect password")
                 }
             }}>
                 <h1>Register</h1>
@@ -65,7 +55,7 @@ const Register = ({ setAuth }) => {
                 <input type="password" onChange={(e) => { passwordValidation(e, setPassword) }} placeholder="Enter Password" /><br></br>
                 <input type="password" onChange={(e) => { passwordValidation(e, setConfirmPassword) }} placeholder="Confirm Password" />
                 <input type="submit" value="Register" />
-                <p>{loading ? <Spinner className={style.spinner} /> : ""}</p>
+                <section>{loading ? <Spinner /> : ""}</section>
                 <h3>{errorFromServer ? "Error from server during Registration" : ""}</h3>
             </form>
         </div>

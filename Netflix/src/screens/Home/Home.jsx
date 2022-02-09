@@ -8,6 +8,9 @@ import { API_KEY_MOVIES } from '../../../logic/key';
 import style from './Home.module.css';
 import axios from "axios";
 import MainBanner from "../../components/MainBanner";
+import Tooltip from '@mui/material/Tooltip';
+import Button from '@mui/material/Button';
+
 
 const Home = ({ searchTerm, setSearchTerm, searchResults, setSearchResults, data, watchList, setWatchList, setMovieDetails, setMovieToPlay, favoritesList, setFavoritesList }) => {
     const [isRedirect, setIsRedirect] = useState(false);
@@ -20,12 +23,20 @@ const Home = ({ searchTerm, setSearchTerm, searchResults, setSearchResults, data
         <section className={style.cardsSection} key={display.id}>
             <img src={display.posterUrl} alt={display.title} />
             <article className={style.details}>
-                <article className={style.buttonsCont}>
-                    <button onClick={() => playVideo(data, display.video, setMovieToPlay, setIsRedirectToVideoPlayer)}><BsPlayCircle title="play video" className={style.icons} /></button>
-                    <button onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")}><HiOutlinePlusCircle className={style.icons} /></button>
-                    <button onClick={() => addToList(data, display.id, favoritesList, setFavoritesList, "favoritesList")}><BsHandThumbsUp title="Like" className={style.icons} /></button>
-                    <button onClick={() => showObjDetails( display.id,data, setMovieDetails, setIsRedirect)}>< IoIosArrowDropdown title="Details" className={style.icons} /></button>
-                </article>
+                {/* <article className={style.buttonsCont}>
+                    <Tooltip title="play video" placement="top">
+                        <Button><BsPlayCircle className={style.icons} onClick={() => playVideo(data, display.video, setMovieToPlay, setIsRedirectToVideoPlayer)} /></Button>
+                    </Tooltip>
+                    <Tooltip title="add to watch list" placement="top">
+                        <Button><HiOutlinePlusCircle className={style.icons} onClick={() => addToList(data, display.id, watchList, setWatchList, "watchList")} /></Button>
+                    </Tooltip>
+                    <Tooltip title="add to favorites" placement="top">
+                        <Button><BsHandThumbsUp className={style.icons} onClick={() => addToList(data, display.id, favoritesList, setFavoritesList, "favoritesList")} /></Button>
+                    </Tooltip>
+                    <Tooltip title="Details" placement="top">
+                        <Button><IoIosArrowDropdown className={style.icons} onClick={() => showObjDetails(display.id, data, setMovieDetails, setIsRedirect)} /></Button>
+                    </Tooltip>
+                </article> */}
                 <article className={style.textDetailsCont}>
                     <p>{display.title}</p>
                     <p>{display.actors}</p>
